@@ -2,30 +2,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="@color/main_background"
     tools:context=".HomeScreen">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
-    <ScrollView android:id="@+id/fullscreen_content"
+    <ScrollView
+        android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:keepScreenOn="true"
-        android:textColor="#33b5e5"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:gravity="center"
-        android:text="@string/dummy_content"
-        android:fillViewport="false" />
+        android:fillViewport="false"
+        android:keepScreenOn="true">
 
-                    <Button android:id="@+id/app_button_1"
-                        style="@style/HomeScreenButton"
-                        android:text="@string/dummy_button"
-                        android:layout_gravity="top" />
-                    <Button android:id="@+id/app_button_2"
-                        style="@style/HomeScreenButton"
-                        android:text="App 2"
-                        android:layout_gravity="top" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/app_btn_phone"
+                android:text="@string/app_btn_phone"
+                android:drawableStart="@drawable/phone"
+                android:background="@color/app_phone" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/app_btn_sms"
+                android:text="@string/app_btn_sms"
+                android:drawableStart="@drawable/sms_closed"
+                android:background="@color/app_sms" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/app_btn_magnifier"
+                android:text="@string/app_btn_magnifier"
+                android:drawableStart="@drawable/magnifier"
+                android:background="@color/app_magnifier" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/app_btn_medic"
+                android:text="@string/app_btn_medic"
+                android:drawableStart="@drawable/medic"
+                android:background="@color/app_medic" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/app_btn_sos"
+                android:text="@string/app_btn_sos"
+                android:drawableStart="@drawable/sos"
+                android:background="@color/app_sos" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/app_btn_settings"
+                android:text="@string/app_btn_settings"
+                android:drawableStart="@drawable/settings"
+                android:background="@color/app_settings" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
