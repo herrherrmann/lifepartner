@@ -97,7 +97,7 @@ public class HomeScreen extends Activity implements TextToSpeech.OnInitListener 
             @Override
             public void onClick(View view) {
                 if (!tts.isSpeaking()) {
-                    textToSpeech("Die Batterie ist bei " + (int) (getBatteryLevel() * 100) + "%.");
+                    textToSpeech("Die Batterie ist zu " + (int) (getBatteryLevel() * 100) + "% geladen.");
                 }
             }
         });
