@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="default_text_size">32dp</dimen>
+    <dimen name="default_padding_m">24dp</dimen>
+    <dimen name="default_padding_s">12dp</dimen>
+
+</resources>

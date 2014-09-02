@@ -2,7 +2,7 @@
 
     <string name="app_name">Life Partner</string>
     <string name="app_btn_phone">Telefon</string>
-    <string name="app_btn_sms">SMS-Nachrichten</string>
+    <string name="app_btn_sms">Nachrichten</string>
     <string name="app_btn_medic">Medikation</string>
     <string name="app_btn_magnifier">Lupe</string>
     <string name="app_btn_sos">SOS</string>
