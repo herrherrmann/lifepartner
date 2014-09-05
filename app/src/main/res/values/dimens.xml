@@ -4,5 +4,7 @@
     <dimen name="default_text_size">32dp</dimen>
     <dimen name="default_padding_m">24dp</dimen>
     <dimen name="default_padding_s">12dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 
 </resources>

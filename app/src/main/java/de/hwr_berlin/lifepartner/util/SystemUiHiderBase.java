@@ -1,4 +1,4 @@
-package de.hwr_berlin.rp5000.util;
+package de.hwr_berlin.lifepartner.util;
 
 import android.app.Activity;
 import android.view.View;

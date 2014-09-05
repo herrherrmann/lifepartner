@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="de.hwr_berlin.lifepartner.SettingsActivity">
+
+    <Button
+        style="@style/HomeScreenAppButton"
+        android:id="@+id/app_btn_settings"
+        android:text="@string/app_btn_settings"
+        android:drawableStart="@drawable/settings"
+        android:background="@color/app_settings"
+        android:onClick="" />
+
+    <ScrollView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:fillViewport="false"
+        android:keepScreenOn="true">
+
+        <LinearLayout
+            android:id="@+id/app_selection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/btn_app_manager"
+                android:text="@string/app_manager"
+                android:background="@color/app_settings"
+                android:onClick="" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/btn_emergency_contact"
+                android:text="@string/emergency_contact"
+                android:background="@color/app_settings"
+                android:onClick="" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/btn_font_size"
+                android:text="@string/font_size"
+                android:background="@color/app_settings"
+                android:onClick="" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/btn_colorblind_mode"
+                android:text="@string/colorblind_mode"
+                android:background="@color/app_settings"
+                android:onClick="" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/btn_updates_wifi"
+                android:text="@string/updates_wifi"
+                android:background="@color/app_settings"
+                android:onClick="" />
+
+            <Button
+                style="@style/HomeScreenAppButton"
+                android:id="@+id/btn_about"
+                android:text="@string/about"
+                android:background="@color/app_settings"
+                android:onClick="" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -94,7 +94,8 @@
                 android:id="@+id/app_btn_settings"
                 android:text="@string/app_btn_settings"
                 android:drawableStart="@drawable/settings"
-                android:background="@color/app_settings" />
+                android:background="@color/app_settings"
+                android:onClick="openSettings" />
 
         </LinearLayout>
     </ScrollView>

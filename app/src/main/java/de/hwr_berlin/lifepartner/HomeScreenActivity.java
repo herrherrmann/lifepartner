@@ -1,4 +1,4 @@
-package de.hwr_berlin.rp5000;
+package de.hwr_berlin.lifepartner;
 
 import android.app.Activity;
 import android.content.Context;
@@ -20,16 +20,9 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-import de.hwr_berlin.rp5000.util.SystemUiHider;
+import de.hwr_berlin.rp5000.R;
 
-
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- *
- * @see SystemUiHider
- */
-public class HomeScreen extends Activity implements TextToSpeech.OnInitListener {
+public class HomeScreenActivity extends Activity implements TextToSpeech.OnInitListener {
 
     private static Context context;
     private TextToSpeech tts;
@@ -154,5 +147,9 @@ public class HomeScreen extends Activity implements TextToSpeech.OnInitListener 
             tts = null;
             Log.d("debug", "TTS konnte nicht initialisiert werden.");
         }
+    }
+
+    public void openSettings(View view) {
+        startActivity(new Intent(this, SettingsActivity.class));
     }
 }
