@@ -48,12 +48,16 @@
                 android:background="@color/app_settings"
                 android:onClick="" />
 
-            <Button
+            <CheckedTextView
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/btn_colorblind_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/colorblind_mode"
                 android:background="@color/app_settings"
-                android:onClick="" />
+                android:checkMark="@drawable/settings"
+                android:checked="true"
+                android:onClick="checkColorblindMode" />
 
             <Button
                 style="@style/HomeScreenAppButton"
