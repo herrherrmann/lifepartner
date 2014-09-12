@@ -5,19 +5,33 @@
     android:orientation="vertical"
     tools:context="de.hwr_berlin.lifepartner.SettingsActivity">
 
-    <Button
+    <!-- Header -->
+    <LinearLayout
         style="@style/HomeScreenAppButton"
-        android:id="@+id/app_btn_settings"
-        android:text="@string/app_btn_settings"
-        android:drawableStart="@drawable/settings"
-        android:background="@color/app_settings"
-        android:onClick="" />
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_settings_header">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_m"
+            android:src="@drawable/arrow_left"
+            android:onClick="finish"/>
+
+        <TextView
+            style="@style/AppHeader"
+            android:text="@string/app_btn_settings"/>
+
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:fadeScrollbars="false"
         android:fillViewport="false"
         android:keepScreenOn="true">
 
@@ -31,21 +45,21 @@
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/btn_app_manager"
                 android:text="@string/app_manager"
-                android:background="@color/app_settings"
+                android:background="@color/app_settings_secondary"
                 android:onClick="" />
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/btn_emergency_contact"
                 android:text="@string/emergency_contact"
-                android:background="@color/app_settings"
+                android:background="@drawable/shape_settings_menu"
                 android:onClick="" />
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/btn_font_size"
                 android:text="@string/font_size"
-                android:background="@color/app_settings"
+                android:background="@drawable/shape_settings_menu"
                 android:onClick="" />
 
             <CheckedTextView
@@ -54,23 +68,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/colorblind_mode"
-                android:background="@color/app_settings"
-                android:checkMark="@drawable/settings"
-                android:checked="true"
+                android:background="@drawable/shape_settings_menu"
+                android:checkMark="@drawable/checkbox_off"
                 android:onClick="checkColorblindMode" />
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/btn_updates_wifi"
                 android:text="@string/updates_wifi"
-                android:background="@color/app_settings"
+                android:background="@drawable/shape_settings_menu"
                 android:onClick="" />
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/btn_about"
                 android:text="@string/about"
-                android:background="@color/app_settings"
+                android:background="@drawable/shape_settings_menu"
                 android:onClick="" />
 
         </LinearLayout>

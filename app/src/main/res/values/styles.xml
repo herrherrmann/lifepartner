@@ -21,14 +21,47 @@
         <item name="android:textColor">@color/main_text</item>
     </style>
 
-    <style name="HomeScreenAppButton">
+    <style name="AppHeader">
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="HomeScreenAppButton">
         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">left|center_vertical</item>
         <item name="android:padding">@dimen/default_padding_m</item>
         <item name="android:drawablePadding">@dimen/default_padding_s</item>
         <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <!-- Phone -->
+    <style name="PhoneButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:background">@drawable/shape_phone_btn</item>
+    </style>
+
+    <style name="PhoneButtonCall">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:background">@drawable/shape_phone_btn_call</item>
+    </style>
+
+    <style name="PhoneButtonOthers">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:background">@drawable/shape_phone_btn_others</item>
     </style>
 
 </resources>

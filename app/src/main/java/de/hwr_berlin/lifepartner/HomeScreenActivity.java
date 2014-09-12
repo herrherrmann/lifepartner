@@ -149,7 +149,14 @@ public class HomeScreenActivity extends Activity implements TextToSpeech.OnInitL
         }
     }
 
-    public void openSettings(View view) {
+    /*
+    * Starting other Activities
+    * */
+    public void startPhone(View view) {
+        startActivity(new Intent(this, PhoneActivity.class));
+    }
+
+    public void startSettings(View view) {
         startActivity(new Intent(this, SettingsActivity.class));
     }
 }

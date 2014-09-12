@@ -16,25 +16,26 @@ public class SettingsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        setupColorblindModeCheckbox();
+    }
+
+    private void setupColorblindModeCheckbox() {
         final CheckedTextView btnColorblindMode = (CheckedTextView) findViewById(R.id.btn_colorblind_mode);
         btnColorblindMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("debug", "Check it!");
                 if (btnColorblindMode.isChecked()) {
                     btnColorblindMode.setChecked(false);
+                    btnColorblindMode.setCheckMarkDrawable(getResources().getDrawable(R.drawable.checkbox_off));
                 } else {
                     btnColorblindMode.setChecked(true);
+                    btnColorblindMode.setCheckMarkDrawable(getResources().getDrawable(R.drawable.checkbox_on));
                 }
-                // btnColorblindMode.toggle();
             }
         });
     }
 
-//    public void checkColorblindMode(View view){
-//        Toast.makeText(this, "Check it!", Toast.LENGTH_SHORT).show();
-//        CheckedTextView btnColorblindMode = (CheckedTextView) findViewById(R.id.btn_colorblind_mode);
-//        btnColorblindMode.toggle();
-//    }
-
+    public void finish(View view) {
+        finish();
+    }
 }

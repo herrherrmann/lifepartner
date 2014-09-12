@@ -1,15 +1,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/main_background"
-    tools:context=".HomeScreen">
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/main_background"
+             tools:context=".HomeScreen">
 
     <ScrollView
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:fadeScrollbars="false"
         android:fillViewport="false"
         android:keepScreenOn="true">
 
@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- Status Bar -->
             <LinearLayout
                 style="@style/StatusBar"
                 android:id="@+id/status_bar"
@@ -54,40 +55,42 @@
 
             </LinearLayout>
 
+            <!-- App Buttons -->
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/app_btn_phone"
                 android:text="@string/app_btn_phone"
                 android:drawableStart="@drawable/phone"
-                android:background="@color/app_phone" />
+                android:background="@color/app_phone"
+                android:onClick="startPhone"/>
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/app_btn_sms"
                 android:text="@string/app_btn_sms"
                 android:drawableStart="@drawable/sms_closed"
-                android:background="@color/app_sms" />
+                android:background="@color/app_sms"/>
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/app_btn_magnifier"
                 android:text="@string/app_btn_magnifier"
                 android:drawableStart="@drawable/magnifier"
-                android:background="@color/app_magnifier" />
+                android:background="@color/app_magnifier"/>
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/app_btn_medic"
                 android:text="@string/app_btn_medic"
                 android:drawableStart="@drawable/medic"
-                android:background="@color/app_medic" />
+                android:background="@color/app_medic"/>
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/app_btn_sos"
                 android:text="@string/app_btn_sos"
                 android:drawableStart="@drawable/sos"
-                android:background="@color/app_sos" />
+                android:background="@color/app_sos"/>
 
             <Button
                 style="@style/HomeScreenAppButton"
@@ -95,7 +98,7 @@
                 android:text="@string/app_btn_settings"
                 android:drawableStart="@drawable/settings"
                 android:background="@color/app_settings"
-                android:onClick="openSettings" />
+                android:onClick="startSettings"/>
 
         </LinearLayout>
     </ScrollView>

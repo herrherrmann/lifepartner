@@ -1,5 +1,7 @@
 <resources>
 
+    <!-- Apps und Activities -->
+    <string name="title_activity_phone">Telefon</string>
     <string name="title_activity_settings">Einstellungen</string>
 
     <string name="app_name">Life Partner</string>
@@ -9,6 +11,8 @@
     <string name="app_btn_magnifier">Lupe</string>
     <string name="app_btn_sos">SOS</string>
     <string name="app_btn_settings">Einstellungen</string>
+
+    <!-- Einstellungen -->
     <string name="app_manager">Apps hinzufügen/entfernen</string>
     <string name="emergency_contact">Notfallkontakte</string>
     <string name="font_size">Schriftgröße</string>

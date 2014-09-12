@@ -3,11 +3,20 @@
     <color name="main_background">#eee</color>
     <color name="main_text">#000</color>
 
+    <color name="menu_border">#5c5c5c</color>
+
     <color name="app_phone">#59bfff</color>
+    <color name="app_phone_secondary">#4b9ace</color>
+
     <color name="app_sms">#7ce324</color>
+
     <color name="app_magnifier">#ffd934</color>
+
     <color name="app_medic">#ff57a1</color>
+
     <color name="app_sos">#ff2a2a</color>
+
     <color name="app_settings">#aaa</color>
+    <color name="app_settings_secondary">#909090</color>
 
 </resources>
