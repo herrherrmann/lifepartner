@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_menu">
+
+    <TextView
+        android:id="@+id/sms_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_text_size"
+        android:paddingLeft="@dimen/default_padding_s"
+        android:paddingRight="@dimen/default_padding_s"
+        android:paddingTop="@dimen/default_padding_s"
+        android:textColor="@color/app_sms_secondary">
+    </TextView>
+
+    <TextView
+        android:id="@+id/sms_message"
+        android:layout_below="@+id/sms_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_text_size_small"
+        android:paddingLeft="@dimen/default_padding_s"
+        android:paddingRight="@dimen/default_padding_s"
+        android:paddingBottom="@dimen/default_padding_m"
+        android:textColor="@color/main_black"
+        android:drawableStart="@drawable/arrow_right_small"
+        android:drawablePadding="@dimen/default_padding_s">
+    </TextView>
+
+</RelativeLayout>

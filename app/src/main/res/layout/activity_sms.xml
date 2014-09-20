@@ -2,8 +2,9 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:background="@color/main_background"
               android:orientation="vertical"
-              tools:context="de.hwr_berlin.lifepartner.SettingsActivity">
+              tools:context=".HomeScreen">
 
     <!-- Header -->
     <LinearLayout
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@drawable/shape_phone_header">
+        android:background="@drawable/shape_sms_header">
 
         <ImageView
             style="@style/AppHeaderBack"
@@ -21,15 +22,18 @@
 
         <TextView
             style="@style/AppHeader"
-            android:text="@string/app_phone"/>
+            android:text="@string/app_sms"/>
 
     </LinearLayout>
 
-    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-                                       xmlns:tools="http://schemas.android.com/tools"
-                                       android:id="@+id/pager"
-                                       android:layout_width="match_parent"
-                                       android:layout_height="match_parent"
-                                       tools:context="de.hwr_berlin.lifepartner.PhoneActivity"/>
+    <TextView
+        style="@style/SmsButtonNew"
+        android:drawableStart="@drawable/sms_closed"
+        android:text="Neue Nachricht"/>
+
+    <ListView
+        style="@style/SmsList"
+        android:id="@+id/sms_list">
+    </ListView>
 
 </LinearLayout>

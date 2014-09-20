@@ -6,10 +6,10 @@
                 android:color="@color/menu_border"/>
         </shape>
     </item>
-    <item android:top="@dimen/menu_border_size">
+    <item android:bottom="@dimen/menu_header_border_size">
         <shape android:shape="rectangle">
             <solid
-                android:color="@color/app_settings_secondary"/>
+                android:color="@color/app_sms"/>
         </shape>
     </item>
 </layer-list>

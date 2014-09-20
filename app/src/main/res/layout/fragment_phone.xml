@@ -121,7 +121,7 @@
                 <Button
                     android:text="*"
                     android:id="@+id/btn_phone_asterisk"
-                    style="@style/PhoneButtonOthers"
+                    style="@style/PhoneButtonGrey"
                     android:onClick="addNumber"/>
 
                 <Button
@@ -133,7 +133,7 @@
                 <Button
                     android:text="#"
                     android:id="@+id/btn_phone_hash"
-                    style="@style/PhoneButtonOthers"
+                    style="@style/PhoneButtonGrey"
                     android:onClick="addNumber"/>
 
             </TableRow>
@@ -151,7 +151,7 @@
                     style="@style/PhoneButtonCall"/>
 
                 <RelativeLayout
-                    style="@style/PhoneButtonOthers"
+                    style="@style/PhoneButtonGrey"
                     android:gravity="center"
                     android:onClick="redial">
 

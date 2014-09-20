@@ -108,10 +108,10 @@ public class HomeScreenActivity extends Activity implements TextToSpeech.OnInitL
         Button appBtnSms = (Button) findViewById(R.id.app_btn_sms);
         if (getUnreadSms() > 0) {
             appBtnSms.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(R.drawable.sms_open), null, null, null);
-            appBtnSms.setText(getResources().getString(R.string.app_btn_sms) + " (" + getUnreadSms() + ")");
+            appBtnSms.setText(getResources().getString(R.string.app_sms) + " (" + getUnreadSms() + ")");
         } else {
             appBtnSms.setBackground(getResources().getDrawable(R.drawable.sms_closed));
-            appBtnSms.setText(getResources().getString(R.string.app_btn_sms));
+            appBtnSms.setText(getResources().getString(R.string.app_sms));
         }
     }
 
@@ -158,5 +158,13 @@ public class HomeScreenActivity extends Activity implements TextToSpeech.OnInitL
 
     public void startSettings(View view) {
         startActivity(new Intent(this, SettingsActivity.class));
+    }
+
+    public void startSms(View view) {
+        startActivity(new Intent(this, SmsActivity.class));
+    }
+
+    public void startMagnifier(View view) {
+        startActivity(new Intent(this, CameraActivity.class));
     }
 }

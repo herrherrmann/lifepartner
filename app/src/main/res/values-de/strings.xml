@@ -5,12 +5,13 @@
     <string name="title_activity_settings">Einstellungen</string>
 
     <string name="app_name">Life Partner</string>
-    <string name="app_btn_phone">Telefon</string>
-    <string name="app_btn_sms">Nachrichten</string>
-    <string name="app_btn_medic">Medikation</string>
-    <string name="app_btn_magnifier">Lupe</string>
-    <string name="app_btn_sos">SOS</string>
-    <string name="app_btn_settings">Einstellungen</string>
+    <string name="app_phone">Telefon</string>
+    <string name="app_phone_contacts">Kontakte</string>
+    <string name="app_sms">Nachrichten</string>
+    <string name="app_medic">Medikation</string>
+    <string name="app_magnifier">Lupe</string>
+    <string name="app_sos">SOS</string>
+    <string name="app_settings">Einstellungen</string>
 
     <!-- Einstellungen -->
     <string name="app_manager">Apps hinzufügen/entfernen</string>

@@ -20,7 +20,7 @@ import android.widget.TextView;
 import de.hwr_berlin.rp5000.R;
 
 
-public class PhoneActivity extends Activity implements ActionBar.TabListener {
+public class PhoneActivity extends Activity implements ActionBar.TabListener, PhoneContacts.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -49,29 +49,6 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.phone, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -155,6 +132,11 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener {
         phoneNumber.setText("0160133742");
     }
 
+    @Override
+    public void onFragmentInteraction(String id) {
+        // ...
+    }
+
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
@@ -169,7 +151,14 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PhoneFragment (defined as a static inner class below).
-            return PhoneFragment.newInstance(position + 1);
+            switch (position) {
+                case 0:
+                    return PhoneFragment.newInstance(position + 1);
+                case 1:
+                    return PhoneContacts.newInstance("x", "y");
+                default:
+                    return null;
+            }
         }
 
         @Override
@@ -183,9 +172,9 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener {
             Locale l = Locale.getDefault();
             switch (position) {
                 case 0:
-                    return getString(R.string.title_section1).toUpperCase(l);
+                    return getString(R.string.app_phone).toUpperCase(l);
                 case 1:
-                    return getString(R.string.title_section2).toUpperCase(l);
+                    return getString(R.string.app_phone_contacts).toUpperCase(l);
             }
             return null;
         }
@@ -222,6 +211,4 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener {
             return rootView;
         }
     }
-
-
 }

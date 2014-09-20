@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_menu">
+
+    <TextView
+        android:id="@+id/phone_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_text_size"
+        android:paddingLeft="@dimen/default_padding_s"
+        android:paddingRight="@dimen/default_padding_s"
+        android:paddingTop="@dimen/default_padding_s"
+        android:textColor="@color/app_phone_secondary">
+    </TextView>
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_below="@+id/phone_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_text_size_small"
+        android:paddingLeft="@dimen/default_padding_s"
+        android:paddingRight="@dimen/default_padding_s"
+        android:paddingBottom="@dimen/default_padding_m"
+        android:textColor="@color/main_black">
+    </TextView>
+
+</RelativeLayout>
