@@ -1,11 +1,8 @@
 package de.hwr_berlin.lifepartner;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -17,7 +14,7 @@ import java.util.ArrayList;
 import de.hwr_berlin.rp5000.R;
 
 
-public class SmsActivity extends Activity {
+public class SmsActivity extends LifePartnerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +34,6 @@ public class SmsActivity extends Activity {
         items.add(new Sms("Beate Frühling", "Es freut mich, dass die Karte angekommen ist ..."));
         items.add(new Sms("Christian Sauer", "Viel Spaß dann noch!"));
         return items;
-    }
-
-    public void finish(View view) {
-        finish();
     }
 }
 

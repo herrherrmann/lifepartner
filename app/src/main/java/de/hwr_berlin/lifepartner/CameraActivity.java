@@ -1,17 +1,12 @@
 package de.hwr_berlin.lifepartner;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import java.io.IOException;
@@ -19,7 +14,7 @@ import java.io.IOException;
 import de.hwr_berlin.rp5000.R;
 
 
-public class CameraActivity extends Activity {
+public class CameraActivity extends LifePartnerActivity {
 
     private Camera mCamera;
     private CameraPreview mPreview;
@@ -36,11 +31,6 @@ public class CameraActivity extends Activity {
         mPreview = new CameraPreview(this, mCamera);
         LinearLayout preview = (LinearLayout) findViewById(R.id.camera_preview);
         preview.addView(mPreview);
-    }
-
-    public void finish(View view) {
-        finish();
-        releaseCamera();
     }
 
     /*
@@ -70,9 +60,15 @@ public class CameraActivity extends Activity {
 
     private void releaseCamera() {
         if (mCamera != null) {
-            mCamera.release();        // release the camera for other applications
+            mCamera.release();
             mCamera = null;
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        releaseCamera();
     }
 }
 

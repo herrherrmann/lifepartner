@@ -1,26 +1,23 @@
 package de.hwr_berlin.lifepartner;
 
-import java.util.Locale;
-
-import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
+import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 import de.hwr_berlin.rp5000.R;
 
 
-public class PhoneActivity extends Activity implements ActionBar.TabListener, PhoneContacts.OnFragmentInteractionListener {
+public class PhoneActivity extends LifePartnerActivity implements ActionBar.TabListener, PhoneContacts.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -40,6 +37,7 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener, Ph
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_phone);
 
         // Create the adapter that will return a fragment for each of the three
@@ -64,10 +62,6 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener, Ph
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-    }
-
-    public void finish(View view) {
-        finish();
     }
 
     public void removeNumber(View view) {
@@ -138,6 +132,38 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener, Ph
     }
 
     /**
+     * A placeholder fragment containing a simple view.
+     */
+    public static class PhoneFragment extends Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
+
+        public PhoneFragment() {
+        }
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static PhoneFragment newInstance(int sectionNumber) {
+            PhoneFragment fragment = new PhoneFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_phone, container, false);
+            return rootView;
+        }
+    }
+
+    /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
@@ -177,38 +203,6 @@ public class PhoneActivity extends Activity implements ActionBar.TabListener, Ph
                     return getString(R.string.app_phone_contacts).toUpperCase(l);
             }
             return null;
-        }
-    }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PhoneFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
-        public static PhoneFragment newInstance(int sectionNumber) {
-            PhoneFragment fragment = new PhoneFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        public PhoneFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_phone, container, false);
-            return rootView;
         }
     }
 }

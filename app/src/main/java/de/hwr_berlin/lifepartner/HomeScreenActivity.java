@@ -1,6 +1,5 @@
 package de.hwr_berlin.lifepartner;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -22,7 +21,7 @@ import java.util.Locale;
 
 import de.hwr_berlin.rp5000.R;
 
-public class HomeScreenActivity extends Activity implements TextToSpeech.OnInitListener {
+public class HomeScreenActivity extends LifePartnerActivity implements TextToSpeech.OnInitListener {
 
     private static Context context;
     private TextToSpeech tts;
@@ -153,6 +152,7 @@ public class HomeScreenActivity extends Activity implements TextToSpeech.OnInitL
     * Starting other Activities
     * */
     public void startPhone(View view) {
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         startActivity(new Intent(this, PhoneActivity.class));
     }
 
