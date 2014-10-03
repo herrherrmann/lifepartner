@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context="de.hwr_berlin.lifepartner.IntroActivity$PlaceholderFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/default_padding_xxl"
+        android:paddingRight="@dimen/default_padding_m"
+        android:src="@drawable/logo_symbol_xxl" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding_m"
+        android:text="@string/intro_welcome"
+        android:textSize="@dimen/default_text_size"
+        android:gravity="center"
+        android:textColor="@color/main_logo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_continue"
+        android:text="@string/intro_continue"
+        android:textColor="@color/main_white"
+        android:textSize="@dimen/default_text_size"
+        android:padding="@dimen/default_padding_m"
+        android:background="@color/main_logo"
+        android:layout_gravity="center"
+        android:onClick="nextPage" />
+
+</LinearLayout>

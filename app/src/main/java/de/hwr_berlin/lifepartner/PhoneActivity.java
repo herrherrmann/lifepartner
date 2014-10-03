@@ -10,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TabHost;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -104,8 +105,8 @@ public class PhoneActivity extends LifePartnerActivity
 					phoneNumber.append("8");
 					break;
 				case R.id.btn_phone_9:
-					phoneNumber.append("9");
-					break;
+                    phoneNumber.append("9");
+                    break;
 				case R.id.btn_phone_asterisk:
 					phoneNumber.append("*");
 					break;

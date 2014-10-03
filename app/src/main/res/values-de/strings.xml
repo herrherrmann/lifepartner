@@ -1,4 +1,8 @@
 <resources>
+    <!-- Intro -->
+    <string name="intro_welcome">Willkommen bei LifePartner.</string>
+    <string name="intro_continue">Weiter</string>
+    <string name="intro_package">Bitte wählen Sie den gewünschten Funktionsumfang.</string>
 
     <!-- Apps und Activities -->
     <string name="title_activity_phone">Telefon</string>

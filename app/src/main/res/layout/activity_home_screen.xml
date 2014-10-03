@@ -1,9 +1,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="@color/main_background"
-             tools:context=".HomeScreen">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".HomeScreen">
 
     <ScrollView
         android:id="@+id/fullscreen_content"
@@ -25,33 +25,34 @@
                 android:id="@+id/status_bar"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@drawable/shape_home_statusbar">
 
                 <TextClock
                     style="@style/StatusBarItem"
                     android:id="@+id/status_bar_time"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     style="@style/StatusBarItem"
                     android:id="@+id/status_bar_date"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
                 <ImageView
                     style="@style/StatusBarItem"
                     android:id="@+id/status_bar_battery"
                     android:layout_width="wrap_content"
                     android:layout_height="28dp"
-                    android:src="@drawable/battery_3"/>
+                    android:src="@drawable/battery_3" />
 
                 <ImageView
                     style="@style/StatusBarItem"
                     android:id="@+id/status_bar_signal"
                     android:layout_width="wrap_content"
                     android:layout_height="28dp"
-                    android:src="@drawable/signal_2"/>
+                    android:src="@drawable/signal_2" />
 
             </LinearLayout>
 
@@ -62,7 +63,7 @@
                 android:text="@string/app_phone"
                 android:drawableStart="@drawable/phone"
                 android:background="@color/app_phone"
-                android:onClick="startPhone"/>
+                android:onClick="startPhone" />
 
             <Button
                 style="@style/HomeScreenAppButton"
@@ -70,7 +71,7 @@
                 android:text="@string/app_sms"
                 android:drawableStart="@drawable/sms_closed"
                 android:background="@color/app_sms"
-                android:onClick="startSms"/>
+                android:onClick="startSms" />
 
             <Button
                 style="@style/HomeScreenAppButton"
@@ -78,21 +79,21 @@
                 android:text="@string/app_magnifier"
                 android:drawableStart="@drawable/magnifier"
                 android:background="@color/app_magnifier"
-                android:onClick="startMagnifier"/>
+                android:onClick="startMagnifier" />
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/app_btn_medic"
                 android:text="@string/app_medic"
                 android:drawableStart="@drawable/medic"
-                android:background="@color/app_medic"/>
+                android:background="@color/app_medic" />
 
             <Button
                 style="@style/HomeScreenAppButton"
                 android:id="@+id/app_btn_sos"
                 android:text="@string/app_sos"
                 android:drawableStart="@drawable/sos"
-                android:background="@color/app_sos"/>
+                android:background="@color/app_sos" />
 
             <Button
                 style="@style/HomeScreenAppButton"
@@ -100,7 +101,7 @@
                 android:text="@string/app_settings"
                 android:drawableStart="@drawable/settings"
                 android:background="@color/app_settings"
-                android:onClick="startSettings"/>
+                android:onClick="startSettings" />
 
         </LinearLayout>
     </ScrollView>

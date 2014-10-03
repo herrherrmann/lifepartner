@@ -3,6 +3,8 @@
 
     <dimen name="default_text_size">32dp</dimen>
     <dimen name="default_text_size_small">24dp</dimen>
+
+    <dimen name="default_padding_xxl">128dp</dimen>
     <dimen name="default_padding_m">24dp</dimen>
     <dimen name="default_padding_s">12dp</dimen>
     <dimen name="default_padding_xs">6dp</dimen>

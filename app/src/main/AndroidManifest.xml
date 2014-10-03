@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="de.hwr_berlin.rp5000">
+    package="de.hwr_berlin.rp5000">
 
     <!-- Persmissions -->
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
-    <uses-permission android:name="android.permission.READ_SMS"/>
-    <uses-permission android:name="android.permission.SEND_SMS"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:allowBackup="true"
@@ -20,9 +20,9 @@
             android:name="de.hwr_berlin.lifepartner.HomeScreenActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
@@ -31,7 +31,7 @@
             android:parentActivityName="de.hwr_berlin.lifepartner.HomeScreenActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.hwr_berlin.rp5000.HomeScreen"/>
+                android:value="de.hwr_berlin.rp5000.HomeScreen" />
         </activity>
         <activity
             android:name="de.hwr_berlin.lifepartner.PhoneActivity"
@@ -39,7 +39,7 @@
             android:parentActivityName="de.hwr_berlin.lifepartner.HomeScreenActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.hwr_berlin.lifepartner.HomeScreenActivity"/>
+                android:value="de.hwr_berlin.lifepartner.HomeScreenActivity" />
         </activity>
         <activity
             android:name="de.hwr_berlin.lifepartner.SmsActivity"
@@ -47,7 +47,7 @@
             android:parentActivityName="de.hwr_berlin.lifepartner.HomeScreenActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.hwr_berlin.lifepartner.HomeScreenActivity"/>
+                android:value="de.hwr_berlin.lifepartner.HomeScreenActivity" />
         </activity>
         <activity
             android:name="de.hwr_berlin.lifepartner.CameraActivity"
@@ -55,7 +55,16 @@
             android:parentActivityName="de.hwr_berlin.lifepartner.HomeScreenActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.hwr_berlin.lifepartner.HomeScreenActivity"/>
+                android:value="de.hwr_berlin.lifepartner.HomeScreenActivity" />
+        </activity>
+        <activity
+            android:name="de.hwr_berlin.lifepartner.IntroActivity"
+            android:label="@string/title_activity_intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
