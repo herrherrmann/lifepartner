@@ -60,8 +60,8 @@ public class HomeScreenActivity extends LifePartnerActivity implements TextToSpe
 
 	private void updateStatusBarDate() {
 		TextView statusBarDate = (TextView) findViewById(R.id.status_bar_date);
-		String dateString = new SimpleDateFormat("dd.MM.yyyy").format(System.currentTimeMillis());
-		statusBarDate.setText(dateString);
+        String dateString = new SimpleDateFormat("EE, dd.MM.yy").format(System.currentTimeMillis());
+        statusBarDate.setText(dateString);
 		statusBarDate.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -114,8 +114,9 @@ public class HomeScreenActivity extends LifePartnerActivity implements TextToSpe
 			appBtnSms.setText(getResources().getString(R.string.app_sms) + " (" + getUnreadSms() +
 							  ")");
 		} else {
-			appBtnSms.setBackground(getResources().getDrawable(R.drawable.sms_closed));
-			appBtnSms.setText(getResources().getString(R.string.app_sms));
+            appBtnSms.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(
+                    R.drawable.sms_closed), null, null, null);
+            appBtnSms.setText(getResources().getString(R.string.app_sms));
 		}
 	}
 

@@ -12,11 +12,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:gravity">left|center_vertical</item>
-        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:paddingLeft">@dimen/default_padding_s</item>
+        <item name="android:paddingRight">@dimen/default_padding_s</item>
+        <item name="android:paddingTop">@dimen/default_padding_s</item>
+        <item name="android:paddingBottom">@dimen/default_padding_s</item>
     </style>
 
     <style name="StatusBarItem">
-        <item name="android:layout_marginRight">@dimen/default_padding_s</item>
+        <item name="android:layout_marginRight">@dimen/default_padding_xs</item>
         <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
