@@ -1,12 +1,14 @@
 package de.hwr_berlin.lifepartner;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import java.io.IOException;
@@ -46,6 +48,13 @@ public class CameraActivity extends LifePartnerActivity {
 		preview.addView(mPreview);
 	}
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveCameraState();
+        releaseCamera();
+    }
+
 	/*
 	 * CAMERA Stuff
 	 * http://developer.android.com/guide/topics/media/camera.html
@@ -65,11 +74,30 @@ public class CameraActivity extends LifePartnerActivity {
 		}
 	}
 
-	@Override
-	protected void onPause() {
-		super.onPause();
-		releaseCamera();
-	}
+    private void saveCameraState() {
+        if (mCamera != null) {
+            SharedPreferences settings = getSharedPreferences(PREFS, 0);
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putInt(PREF_CAMERA_ZOOM, mCamera.getParameters().getZoom());
+            editor.commit();
+        }
+    }
+
+    public void zoomIn(View view) {
+        Camera.Parameters p = mCamera.getParameters();
+        if (p.getZoom() < p.getMaxZoom()) {
+            p.setZoom(p.getZoom() + 10);
+        }
+        mCamera.setParameters(p);
+    }
+
+    public void zoomOut(View view) {
+        Camera.Parameters p = mCamera.getParameters();
+        if (p.getZoom() > 0) {
+            p.setZoom(p.getZoom() - 10);
+        }
+        mCamera.setParameters(p);
+    }
 }
 
 /**
@@ -122,9 +150,10 @@ class CameraPreview extends SurfaceView implements SurfaceHolder.Callback {
 
 		mCamera.setDisplayOrientation(90);
 
-		Camera.Parameters p = mCamera.getParameters();
-		p.setZoom(p.getMaxZoom() / 2);
-		mCamera.setParameters(p);
+        Camera.Parameters p = mCamera.getParameters();
+        SharedPreferences settings = getContext().getSharedPreferences(LifePartnerActivity.PREFS, 0);
+        p.setZoom(settings.getInt(LifePartnerActivity.PREF_CAMERA_ZOOM, p.getMaxZoom() / 2));
+        mCamera.setParameters(p);
 
 		// start preview with new settings
 		try {

@@ -10,8 +10,8 @@ import de.hwr_berlin.rp5000.R;
 
 public class SettingsActivity extends LifePartnerActivity {
 
-	protected String prefColorBlindMode = "colorBlindMode";
-	private CheckedTextView btnColorblindMode;
+
+    private CheckedTextView btnColorblindMode;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,8 @@ public class SettingsActivity extends LifePartnerActivity {
 
 	private void setupColorblindMode() {
 		SharedPreferences settings = getSharedPreferences(PREFS, 0);
-		if (settings.getBoolean(prefColorBlindMode, false)) {
-			btnColorblindMode.setChecked(true);
+        if (settings.getBoolean(PREF_COLOR_BLIND_MODE, false)) {
+            btnColorblindMode.setChecked(true);
 			btnColorblindMode.setCheckMarkDrawable(getResources().getDrawable(
 					R.drawable.checkbox_on));
 		}
@@ -43,13 +43,13 @@ public class SettingsActivity extends LifePartnerActivity {
 		SharedPreferences settings = getSharedPreferences(PREFS, 0);
 		SharedPreferences.Editor editor = settings.edit();
 		if (btnColorblindMode.isChecked()) {
-			editor.putBoolean(prefColorBlindMode, false);
-			btnColorblindMode.setChecked(false);
+            editor.putBoolean(PREF_COLOR_BLIND_MODE, false);
+            btnColorblindMode.setChecked(false);
 			btnColorblindMode.setCheckMarkDrawable(getResources().getDrawable(
 					R.drawable.checkbox_off));
 		} else {
-			editor.putBoolean(prefColorBlindMode, true);
-			btnColorblindMode.setChecked(true);
+            editor.putBoolean(PREF_COLOR_BLIND_MODE, true);
+            btnColorblindMode.setChecked(true);
 			btnColorblindMode.setCheckMarkDrawable(getResources().getDrawable(
 					R.drawable.checkbox_on));
 		}

@@ -12,7 +12,7 @@
     <string name="app_phone">Telefon</string>
     <string name="app_phone_contacts">Kontakte</string>
     <string name="app_sms">Nachrichten</string>
-    <string name="app_medic">Medikation</string>
+    <string name="app_health">Gesundheit</string>
     <string name="app_magnifier">Lupe</string>
     <string name="app_sos">SOS</string>
     <string name="app_settings">Einstellungen</string>

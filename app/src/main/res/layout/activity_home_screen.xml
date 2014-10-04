@@ -83,10 +83,10 @@
 
             <Button
                 style="@style/HomeScreenAppButton"
-                android:id="@+id/app_btn_medic"
-                android:text="@string/app_medic"
-                android:drawableStart="@drawable/medic"
-                android:background="@color/app_medic" />
+                android:id="@+id/app_btn_health"
+                android:text="@string/app_health"
+                android:drawableStart="@drawable/health"
+                android:background="@color/app_health" />
 
             <Button
                 style="@style/HomeScreenAppButton"
