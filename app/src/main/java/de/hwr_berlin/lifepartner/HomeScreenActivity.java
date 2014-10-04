@@ -37,6 +37,7 @@ public class HomeScreenActivity extends LifePartnerActivity implements TextToSpe
 
 		updateStatusBarDate();
 		updateStatusBarBattery();
+        updateStatusBarSignal();
 
 		updateAppBtnSms();
 	}
@@ -97,6 +98,18 @@ public class HomeScreenActivity extends LifePartnerActivity implements TextToSpe
 			}
 		});
 	}
+
+    private void updateStatusBarSignal() {
+        ImageView statusBarSignal = (ImageView) findViewById(R.id.status_bar_signal);
+        statusBarSignal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!tts.isSpeaking()) {
+                    textToSpeech("Die Empfangsqualität ist gut.");
+                }
+            }
+        });
+    }
 
 	private float getBatteryLevel() {
 		IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
