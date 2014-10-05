@@ -150,12 +150,13 @@
     <style name="SettingsAppManagerAppCheckbox">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
         <item name="android:layout_marginRight">@dimen/default_padding_s</item>
     </style>
 
     <style name="SettingsAppManagerAppButton" parent="HomeScreenAppButton">
         <item name="android:padding">0dp</item>
-        <item name="android:gravity">top</item>
+        <item name="android:gravity">left|top</item>
         <item name="android:drawableEnd">@drawable/arrow_up_down</item>
     </style>
 

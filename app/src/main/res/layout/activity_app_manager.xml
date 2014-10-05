@@ -49,7 +49,7 @@
 
                 <ImageView
                     style="@style/SettingsAppManagerAppCheckbox"
-                    android:src="@drawable/checkbox_on" />
+                    android:src="@drawable/checkbox_on_grey" />
 
                 <TextView
                     style="@style/SettingsAppManagerAppButton"
@@ -62,7 +62,7 @@
 
                 <ImageView
                     style="@style/SettingsAppManagerAppCheckbox"
-                    android:src="@drawable/checkbox_on" />
+                    android:src="@drawable/checkbox_on_grey" />
 
                 <TextView
                     style="@style/SettingsAppManagerAppButton"
@@ -75,7 +75,7 @@
 
                 <ImageView
                     style="@style/SettingsAppManagerAppCheckbox"
-                    android:src="@drawable/checkbox_on" />
+                    android:src="@drawable/checkbox_on_grey" />
 
                 <TextView
                     style="@style/SettingsAppManagerAppButton"
@@ -88,7 +88,7 @@
 
                 <ImageView
                     style="@style/SettingsAppManagerAppCheckbox"
-                    android:src="@drawable/checkbox_on" />
+                    android:src="@drawable/checkbox_on_grey" />
 
                 <TextView
                     style="@style/SettingsAppManagerAppButton"
@@ -101,7 +101,7 @@
 
                 <ImageView
                     style="@style/SettingsAppManagerAppCheckbox"
-                    android:src="@drawable/checkbox_on" />
+                    android:src="@drawable/checkbox_on_grey" />
 
                 <TextView
                     style="@style/SettingsAppManagerAppButton"
@@ -110,18 +110,146 @@
                     android:drawableStart="@drawable/sos" />
             </LinearLayout>
 
-
+            <!-- Basis-Paket -->
             <LinearLayout style="@style/SettingsHeader">
-
                 <TextView
                     style="@style/SettingsHeaderText"
                     android:text="Basis-Paket" />
-
             </LinearLayout>
 
             <LinearLayout style="@style/SettingsAppManagerApp">
 
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
 
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_camera"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/camera" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_alarm"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/alarm_clock" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_calendar"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/calendar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_calculator"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/calculator" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_flashlight"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/light" />
+            </LinearLayout>
+
+            <!-- Vollzugriff-Paket -->
+            <LinearLayout style="@style/SettingsHeader">
+
+                <TextView
+                    style="@style/SettingsHeaderText"
+                    android:text="Vollzugriff-Paket" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_internet"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/chrome" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_email"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/email" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_music"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/music" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_maps"
+                    android:textColor="@color/main_text"
+                    android:drawableStart="@drawable/maps" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="..."
+                    android:gravity="center"
+                    android:textColor="@color/main_text"
+                    android:drawableEnd="@color/main_white" />
             </LinearLayout>
 
         </LinearLayout>

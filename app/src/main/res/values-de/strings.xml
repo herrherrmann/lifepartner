@@ -5,8 +5,8 @@
     <string name="intro_package">Bitte wählen Sie den gewünschten Funktionsumfang.</string>
 
     <!-- Apps und Activities -->
-    <string name="title_activity_phone">Telefon</string>
-    <string name="title_activity_settings">Einstellungen</string>
+    <string name="activity_phone">Telefon</string>
+    <string name="activity_settings">Einstellungen</string>
 
     <string name="app_name">Life Partner</string>
     <string name="app_phone">Telefon</string>
@@ -16,6 +16,19 @@
     <string name="app_magnifier">Lupe</string>
     <string name="app_sos">SOS</string>
     <string name="app_settings">Einstellungen</string>
+
+    <!-- Basis-Paket -->
+    <string name="app_camera">Kamera</string>
+    <string name="app_alarm">Wecker/Timer</string>
+    <string name="app_calendar">Kalender</string>
+    <string name="app_flashlight">Lampe</string>
+    <string name="app_calculator">Rechner</string>
+
+    <!-- Vollzugriff-Paket -->
+    <string name="app_internet">Internet</string>
+    <string name="app_email">E-Mail</string>
+    <string name="app_music">Musik</string>
+    <string name="app_maps">Karten</string>
 
     <!-- Einstellungen -->
     <string name="app_manager">Apps hinzufügen/entfernen</string>

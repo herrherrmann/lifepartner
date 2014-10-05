@@ -3,8 +3,8 @@
 
     <string name="app_name">LifePartner</string>
     <string name="title_activity_intro">LifePartner Intro</string>
-    <string name="title_activity_settings">Settings</string>
-    <string name="title_activity_phone">Phone</string>
+    <string name="activity_settings">Settings</string>
+    <string name="activity_phone">Phone</string>
     <string name="title_activity_sms">Messages</string>
     <string name="title_activity_camera">Camera</string>
     <string name="action_settings">Settings</string>

@@ -27,7 +27,7 @@
         </activity>
         <activity
             android:name="de.hwr_berlin.lifepartner.SettingsActivity"
-            android:label="@string/title_activity_settings"
+            android:label="@string/activity_settings"
             android:parentActivityName="de.hwr_berlin.lifepartner.HomeScreenActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -35,7 +35,7 @@
         </activity>
         <activity
             android:name="de.hwr_berlin.lifepartner.PhoneActivity"
-            android:label="@string/title_activity_phone"
+            android:label="@string/activity_phone"
             android:parentActivityName="de.hwr_berlin.lifepartner.HomeScreenActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
