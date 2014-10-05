@@ -1,10 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context="de.hwr_berlin.lifepartner.PhoneActivity.PhoneFragment"
-                android:background="@color/app_phone_secondary"
-                android:padding="0dp">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.hwr_berlin.lifepartner.PhoneActivity.PhoneFragment"
+    android:background="@color/main_background"
+    android:padding="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,16 +15,18 @@
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            style="@style/HomeScreenAppButton">
+            style="@style/HomeScreenAppButton"
+            android:paddingLeft="@dimen/default_padding_s"
+            android:paddingRight="@dimen/default_padding_s">
 
             <TextView
-                style="@style/HomeScreenAppButton"
                 android:id="@+id/phone_number"
-                android:textColor="#ffffff"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/app_phone_secondary"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/btn_backspace"
@@ -32,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:src="@drawable/backspace"
-                android:onClick="removeNumber"/>
+                android:onClick="removeNumber" />
 
         </LinearLayout>
 
@@ -50,19 +52,19 @@
                     android:text="1"
                     android:id="@+id/btn_phone_1"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
                 <Button
                     android:text="2"
                     android:id="@+id/btn_phone_2"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
                 <Button
                     android:text="3"
                     android:id="@+id/btn_phone_3"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
             </TableRow>
 
@@ -74,19 +76,19 @@
                     android:text="4"
                     android:id="@+id/btn_phone_4"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
                 <Button
                     android:text="5"
                     android:id="@+id/btn_phone_5"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
                 <Button
                     android:text="6"
                     android:id="@+id/btn_phone_6"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
             </TableRow>
 
@@ -98,19 +100,19 @@
                     android:text="7"
                     android:id="@+id/btn_phone_7"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
                 <Button
                     android:text="8"
                     android:id="@+id/btn_phone_8"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
                 <Button
                     android:text="9"
                     android:id="@+id/btn_phone_9"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
             </TableRow>
 
@@ -122,19 +124,19 @@
                     android:text="*"
                     android:id="@+id/btn_phone_asterisk"
                     style="@style/PhoneButtonGrey"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
                 <Button
                     android:text="0"
                     android:id="@+id/btn_phone_0"
                     style="@style/PhoneButton"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
                 <Button
                     android:text="#"
                     android:id="@+id/btn_phone_hash"
                     style="@style/PhoneButtonGrey"
-                    android:onClick="addNumber"/>
+                    android:onClick="addNumber" />
 
             </TableRow>
 
@@ -148,7 +150,7 @@
                     android:drawableStart="@drawable/phone"
                     android:drawablePadding="0dp"
                     android:layout_span="2"
-                    style="@style/PhoneButtonCall"/>
+                    style="@style/PhoneButtonCall" />
 
                 <RelativeLayout
                     style="@style/PhoneButtonGrey"
@@ -159,7 +161,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/btn_phone_repeat"
-                        android:src="@drawable/repeat"/>
+                        android:src="@drawable/repeat" />
 
                 </RelativeLayout>
 

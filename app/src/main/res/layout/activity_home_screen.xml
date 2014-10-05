@@ -21,7 +21,7 @@
 
             <!-- Status Bar -->
             <LinearLayout
-                style="@style/StatusBar"
+                style="@style/HomeScreenStatusBar"
                 android:id="@+id/status_bar"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -29,26 +29,26 @@
                 android:background="@drawable/shape_home_statusbar">
 
                 <TextClock
-                    style="@style/StatusBarItem"
+                    style="@style/HomeScreenStatusBarItem"
                     android:id="@+id/status_bar_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    style="@style/StatusBarItem"
+                    style="@style/HomeScreenStatusBarItem"
                     android:id="@+id/status_bar_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <ImageView
-                    style="@style/StatusBarItem"
+                    style="@style/HomeScreenStatusBarItem"
                     android:id="@+id/status_bar_battery"
                     android:layout_width="wrap_content"
                     android:layout_height="28dp"
                     android:src="@drawable/battery_3" />
 
                 <ImageView
-                    style="@style/StatusBarItem"
+                    style="@style/HomeScreenStatusBarItem"
                     android:id="@+id/status_bar_signal"
                     android:layout_width="wrap_content"
                     android:layout_height="28dp"

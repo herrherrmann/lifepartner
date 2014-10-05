@@ -15,44 +15,24 @@ import java.util.ArrayList;
 
 import de.hwr_berlin.rp5000.R;
 
-public class PhoneContacts extends ListFragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+public class PhoneContactsFragment extends ListFragment {
 
     private OnFragmentInteractionListener mListener;
 
-    // TODO: Rename and change types of parameters
-    public static PhoneContacts newInstance(String param1, String param2) {
-        PhoneContacts fragment = new PhoneContacts();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+    public static PhoneContactsFragment newInstance() {
+        return new PhoneContactsFragment();
     }
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public PhoneContacts() {
+    public PhoneContactsFragment() {
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
         setListAdapter(new PhoneContactsAdapter(getActivity(), dummyPhoneList()));
     }
 

@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/App"
+    tools:context="de.hwr_berlin.lifepartner.AppManagerActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        style="@style/AppHeader"
+        android:background="@drawable/shape_settings_header">
+
+        <ImageView
+            style="@style/AppHeaderBack"
+            android:src="@drawable/arrow_left"
+            android:onClick="finish" />
+
+        <TextView
+            style="@style/AppHeaderText"
+            android:text="@string/app_manager" />
+
+    </LinearLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_white"
+        android:fadeScrollbars="false"
+        android:fillViewport="false"
+        android:keepScreenOn="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SettingsHeader">
+
+                <TextView
+                    style="@style/SettingsHeaderText"
+                    android:text="Minimal-Paket" />
+
+                <TextView
+                    style="@style/SettingsHeaderDescription"
+                    android:text="Diese Apps können nicht deaktiviert werden." />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_on" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_phone"
+                    android:textColor="@color/app_phone"
+                    android:drawableStart="@drawable/phone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_on" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_sms"
+                    android:textColor="@color/app_sms"
+                    android:drawableStart="@drawable/sms_closed" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_on" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_magnifier"
+                    android:textColor="@color/app_magnifier"
+                    android:drawableStart="@drawable/magnifier" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_on" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_health"
+                    android:textColor="@color/app_health"
+                    android:drawableStart="@drawable/health" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+                <ImageView
+                    style="@style/SettingsAppManagerAppCheckbox"
+                    android:src="@drawable/checkbox_on" />
+
+                <TextView
+                    style="@style/SettingsAppManagerAppButton"
+                    android:text="@string/app_sos"
+                    android:textColor="@color/app_sos"
+                    android:drawableStart="@drawable/sos" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SettingsHeader">
+
+                <TextView
+                    style="@style/SettingsHeaderText"
+                    android:text="Basis-Paket" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsAppManagerApp">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

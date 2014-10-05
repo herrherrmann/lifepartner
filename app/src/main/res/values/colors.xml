@@ -2,9 +2,9 @@
     <!-- General Colors -->
     <color name="main_black">#000</color>
     <color name="main_white">#fff</color>
-    <color name="main_background">#eee</color>
     <color name="main_text">#000</color>
-    <color name="menu_border">#5c5c5c</color>
+    <color name="main_border">#5c5c5c</color>
+    <color name="main_background">#eee</color>
     <color name="main_logo">#2BB23B</color>
     <color name="main_logo_secondary">#00DD10</color>
 

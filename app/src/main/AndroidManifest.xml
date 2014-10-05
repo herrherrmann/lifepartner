@@ -66,6 +66,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="de.hwr_berlin.lifepartner.AppManagerActivity"
+            android:label="@string/title_activity_app_manager"
+            android:parentActivityName="de.hwr_berlin.lifepartner.HomeScreenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.hwr_berlin.lifepartner.HomeScreenActivity" />
+        </activity>
     </application>
 
 </manifest>

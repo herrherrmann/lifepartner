@@ -3,23 +3,22 @@
 
     <style name="AppTheme" parent="android:Theme.NoTitleBar.Fullscreen"></style>
 
-    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@null</item>
-    </style>
-
-    <style name="StatusBar">
-        <item name="android:layout_height">wrap_content</item>
+    <style name="App">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:gravity">left|center_vertical</item>
-        <item name="android:paddingLeft">@dimen/default_padding_s</item>
-        <item name="android:paddingRight">@dimen/default_padding_s</item>
-        <item name="android:paddingTop">@dimen/default_padding_s</item>
-        <item name="android:paddingBottom">@dimen/default_padding_s</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/main_background</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/main_text</item>
     </style>
 
-    <style name="StatusBarItem">
-        <item name="android:layout_marginRight">@dimen/default_padding_xs</item>
+    <style name="AppHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:drawablePadding">@dimen/default_padding_s</item>
         <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
@@ -33,10 +32,27 @@
         <item name="android:textColor">@color/main_text</item>
     </style>
 
-    <style name="AppHeader">
-        <item name="android:layout_height">wrap_content</item>
+    <style name="AppHeaderText">
+    <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <!-- HomeScreen -->
+    <style name="HomeScreenStatusBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/default_padding_s</item>
+        <item name="android:paddingRight">@dimen/default_padding_s</item>
+        <item name="android:paddingTop">@dimen/default_padding_s</item>
+        <item name="android:paddingBottom">@dimen/default_padding_s</item>
+    </style>
+
+    <style name="HomeScreenStatusBarItem">
+        <item name="android:layout_marginRight">@dimen/default_padding_xs</item>
         <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
@@ -97,5 +113,51 @@
         <item name="android:divider">@android:color/transparent</item>
         <item name="android:dividerHeight">0dp</item>
     </style>
+
+    <!-- Settings -->
+    <style name="SettingsHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:background">@color/app_settings_secondary</item>
+        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">@dimen/default_padding_xs</item>
+    </style>
+
+    <style name="SettingsHeaderText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/main_white</item>
+    </style>
+
+    <style name="SettingsHeaderDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:textColor">@color/main_white</item>
+    </style>
+
+    <style name="SettingsAppManagerApp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="SettingsAppManagerAppCheckbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/default_padding_s</item>
+    </style>
+
+    <style name="SettingsAppManagerAppButton" parent="HomeScreenAppButton">
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:drawableEnd">@drawable/arrow_up_down</item>
+    </style>
+
 
 </resources>

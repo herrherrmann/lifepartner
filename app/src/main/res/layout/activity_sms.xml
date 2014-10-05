@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/main_background"
-              android:orientation="vertical"
-              tools:context=".HomeScreen">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context=".HomeScreen">
 
     <!-- Header -->
     <LinearLayout
@@ -18,22 +18,21 @@
         <ImageView
             style="@style/AppHeaderBack"
             android:src="@drawable/arrow_left"
-            android:onClick="finish"/>
+            android:onClick="finish" />
 
         <TextView
-            style="@style/AppHeader"
-            android:text="@string/app_sms"/>
+            style="@style/AppHeaderText"
+            android:text="@string/app_sms" />
 
     </LinearLayout>
 
     <TextView
         style="@style/SmsButtonNew"
         android:drawableStart="@drawable/sms_closed"
-        android:text="Neue Nachricht"/>
+        android:text="Neue Nachricht" />
 
     <ListView
         style="@style/SmsList"
-        android:id="@+id/sms_list">
-    </ListView>
+        android:id="@+id/sms_list"></ListView>
 
 </LinearLayout>
