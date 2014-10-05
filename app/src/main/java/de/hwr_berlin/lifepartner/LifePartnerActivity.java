@@ -12,6 +12,12 @@ public class LifePartnerActivity extends Activity {
     public static final String PREF_COLOR_BLIND_MODE = "colorBlindMode";
     public static final String PREF_CAMERA_ZOOM = "cameraZoom";
 
+    public static final String PREF_TOGGLE_APP_CAMERA = "toggleAppCamera";
+    public static final String PREF_TOGGLE_APP_ALARM = "toggleAppAlarm";
+    public static final String PREF_TOGGLE_APP_CALENDAR = "toggleAppCalendar";
+    public static final String PREF_TOGGLE_APP_CALCULATOR = "toggleAppCalculator";
+    public static final String PREF_TOGGLE_APP_FLASHLIGHT = "toggleAppFlashlight";
+
     int onStartCount = 0;
 
     @Override

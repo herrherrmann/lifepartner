@@ -32,10 +32,12 @@
 
     <!-- Einstellungen -->
     <string name="app_manager">Apps hinzufügen/entfernen</string>
-    <string name="emergency_contact">Notfallkontakte</string>
-    <string name="font_size">Schriftgröße</string>
-    <string name="colorblind_mode">Barrierefreie Farben</string>
-    <string name="updates_wifi">Updates / WLAN</string>
-    <string name="about">Über</string>
+    <string name="settings_emergencycontact">Notfallkontakt</string>
+    <string name="settings_fontsize">Schriftgröße</string>
+    <string name="settings_colorblindmode">Barrierefreie Farben</string>
+    <string name="settings_wifi">Updates / WLAN</string>
+    <string name="settings_about">Über</string>
+    <string name="settings_ringtone">Klingelton</string>
+    <string name="settings_texttospeech">Sprachausgabe</string>
 
 </resources>
