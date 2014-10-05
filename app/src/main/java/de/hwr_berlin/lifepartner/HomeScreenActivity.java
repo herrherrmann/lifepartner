@@ -3,6 +3,7 @@ package de.hwr_berlin.lifepartner;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.BatteryManager;
@@ -143,9 +144,12 @@ public class HomeScreenActivity extends LifePartnerActivity implements TextToSpe
 	}
 
 	private void textToSpeech(String message) {
-		tts.speak(message, TextToSpeech.QUEUE_FLUSH, null);
-		Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
-	}
+        SharedPreferences settings = getSharedPreferences(PREFS, 0);
+        if (settings.getBoolean(PREF_SETTING_TEXTTOSPEECH, false)) {
+            tts.speak(message, TextToSpeech.QUEUE_FLUSH, null);
+            Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+        }
+    }
 
 	@Override
 	protected void onDestroy() {

@@ -9,7 +9,8 @@ import de.hwr_berlin.rp5000.R;
 public class LifePartnerActivity extends Activity {
 
     public static final String PREFS = "LifePartnerSettings";
-    public static final String PREF_COLOR_BLIND_MODE = "colorBlindMode";
+    public static final String PREF_SETTING_COLORBLINDMODE = "colorBlindMode";
+    public static final String PREF_SETTING_TEXTTOSPEECH = "textToSpeech";
     public static final String PREF_CAMERA_ZOOM = "cameraZoom";
 
     public static final String PREF_TOGGLE_APP_CAMERA = "toggleAppCamera";

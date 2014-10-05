@@ -11,47 +11,46 @@ import de.hwr_berlin.rp5000.R;
 
 public class SettingsActivity extends LifePartnerActivity {
 
-
-    private CheckedTextView btnColorblindMode;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        btnColorblindMode = (CheckedTextView) findViewById(R.id.btn_colorblind_mode);
-
-        setupColorblindMode();
+        setupCheckboxButton(R.id.btn_colorblind_mode, PREF_SETTING_COLORBLINDMODE);
+        setupCheckboxButton(R.id.btn_texttospeech, PREF_SETTING_TEXTTOSPEECH);
     }
 
-    private void setupColorblindMode() {
+    private void setupCheckboxButton(int buttonId, String preference) {
+        final CheckedTextView button = (CheckedTextView) findViewById(buttonId);
         SharedPreferences settings = getSharedPreferences(PREFS, 0);
-        if (settings.getBoolean(PREF_COLOR_BLIND_MODE, false)) {
-            btnColorblindMode.setChecked(true);
-            btnColorblindMode.setCheckMarkDrawable(getResources().getDrawable(
+
+        if (settings.getBoolean(preference, false)) {
+            button.setChecked(true);
+            button.setCheckMarkDrawable(getResources().getDrawable(
                     R.drawable.checkbox_on));
         }
 
-        btnColorblindMode.setOnClickListener(new View.OnClickListener() {
+        final String preferenceFinal = preference;
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toggleColorBlindMode();
+                toggleCheckbox(button, preferenceFinal);
             }
         });
     }
 
-    private void toggleColorBlindMode() {
+    private void toggleCheckbox(CheckedTextView button, String preference) {
         SharedPreferences settings = getSharedPreferences(PREFS, 0);
         SharedPreferences.Editor editor = settings.edit();
-        if (btnColorblindMode.isChecked()) {
-            editor.putBoolean(PREF_COLOR_BLIND_MODE, false);
-            btnColorblindMode.setChecked(false);
-            btnColorblindMode.setCheckMarkDrawable(getResources().getDrawable(
+        if (button.isChecked()) {
+            editor.putBoolean(preference, false);
+            button.setChecked(false);
+            button.setCheckMarkDrawable(getResources().getDrawable(
                     R.drawable.checkbox_off));
         } else {
-            editor.putBoolean(PREF_COLOR_BLIND_MODE, true);
-            btnColorblindMode.setChecked(true);
-            btnColorblindMode.setCheckMarkDrawable(getResources().getDrawable(
+            editor.putBoolean(preference, true);
+            button.setChecked(true);
+            button.setCheckMarkDrawable(getResources().getDrawable(
                     R.drawable.checkbox_on));
         }
         editor.commit();
@@ -59,5 +58,8 @@ public class SettingsActivity extends LifePartnerActivity {
 
     public void startAppManager(View view) {
         startActivity(new Intent(this, AppManagerActivity.class));
+    }
+
+    public void checkTextToSpeech(View view) {
     }
 }
