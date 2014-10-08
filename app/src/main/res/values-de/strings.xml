@@ -40,4 +40,7 @@
     <string name="settings_ringtone">Klingelton</string>
     <string name="settings_texttospeech">Sprachausgabe</string>
 
+    <!-- SOS -->
+    <string name="sos_info">Soll Ihr Notfallkontakt Beate Frühling (0177/736452) jetzt benachrichtigt werden?</string>
+
 </resources>

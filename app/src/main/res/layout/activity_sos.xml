@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/App"
+              tools:context="de.hwr_berlin.lifepartner.SosActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        style="@style/AppHeader"
+        android:background="@drawable/shape_sos">
+
+        <ImageView
+            style="@style/AppHeaderBack"
+            android:src="@drawable/arrow_left"
+            android:onClick="finish"/>
+
+        <TextView
+            style="@style/AppHeaderText"
+            android:text="@string/app_sos"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/default_padding_m"
+                android:background="@color/main_white"
+                android:src="@drawable/sos_ring"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_m"
+                android:id="@+id/sos_info"
+                android:text="@string/sos_info"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/app_sos"
+                android:background="@color/main_white"/>
+
+            <Button
+                style="@style/Button"
+                android:id="@+id/btn_sos_send"
+                android:textColor="@color/main_white"
+                android:background="@color/app_sos"
+                android:text="Notruf senden"
+                android:onClick="sendSos"/>
+
+            <Button
+                style="@style/Button"
+                android:id="@+id/btn_sos_cancel"
+                android:textColor="@color/main_white"
+                android:text="Abbrechen"
+                android:onClick="finish"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

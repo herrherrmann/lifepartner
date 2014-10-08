@@ -1,107 +1,62 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/App"
+    android:id="@+id/fullscreen_content"
     tools:context=".HomeScreen">
 
-    <ScrollView
-        android:id="@+id/fullscreen_content"
+    <!-- Status Bar -->
+    <LinearLayout
+        style="@style/HomeScreenStatusBar"
+        android:id="@+id/status_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_home_statusbar">
+
+        <TextClock
+            style="@style/HomeScreenStatusBarItem"
+            android:id="@+id/status_bar_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/HomeScreenStatusBarItem"
+            android:id="@+id/status_bar_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            style="@style/HomeScreenStatusBarItem"
+            android:id="@+id/status_bar_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:src="@drawable/battery_3"/>
+
+        <ImageView
+            style="@style/HomeScreenStatusBarItem"
+            android:id="@+id/status_bar_signal"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:src="@drawable/signal_2"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fadeScrollbars="false"
         android:fillViewport="false"
         android:keepScreenOn="true">
 
         <LinearLayout
             android:id="@+id/app_selection"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Status Bar -->
-            <LinearLayout
-                style="@style/HomeScreenStatusBar"
-                android:id="@+id/status_bar"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/shape_home_statusbar">
-
-                <TextClock
-                    style="@style/HomeScreenStatusBarItem"
-                    android:id="@+id/status_bar_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    style="@style/HomeScreenStatusBarItem"
-                    android:id="@+id/status_bar_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <ImageView
-                    style="@style/HomeScreenStatusBarItem"
-                    android:id="@+id/status_bar_battery"
-                    android:layout_width="wrap_content"
-                    android:layout_height="28dp"
-                    android:src="@drawable/battery_3" />
-
-                <ImageView
-                    style="@style/HomeScreenStatusBarItem"
-                    android:id="@+id/status_bar_signal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="28dp"
-                    android:src="@drawable/signal_2" />
-
-            </LinearLayout>
-
-            <!-- App Buttons -->
-            <Button
-                style="@style/HomeScreenAppButton"
-                android:id="@+id/app_btn_phone"
-                android:text="@string/app_phone"
-                android:drawableStart="@drawable/phone"
-                android:background="@color/app_phone"
-                android:onClick="startPhone" />
-
-            <Button
-                style="@style/HomeScreenAppButton"
-                android:id="@+id/app_btn_sms"
-                android:text="@string/app_sms"
-                android:drawableStart="@drawable/sms_closed"
-                android:background="@color/app_sms"
-                android:onClick="startSms" />
-
-            <Button
-                style="@style/HomeScreenAppButton"
-                android:id="@+id/app_btn_magnifier"
-                android:text="@string/app_magnifier"
-                android:drawableStart="@drawable/magnifier"
-                android:background="@color/app_magnifier"
-                android:onClick="startMagnifier" />
-
-            <Button
-                style="@style/HomeScreenAppButton"
-                android:id="@+id/app_btn_health"
-                android:text="@string/app_health"
-                android:drawableStart="@drawable/health"
-                android:background="@color/app_health" />
-
-            <Button
-                style="@style/HomeScreenAppButton"
-                android:id="@+id/app_btn_sos"
-                android:text="@string/app_sos"
-                android:drawableStart="@drawable/sos"
-                android:background="@color/app_sos" />
-
-            <Button
-                style="@style/HomeScreenAppButton"
-                android:id="@+id/app_btn_settings"
-                android:text="@string/app_settings"
-                android:drawableStart="@drawable/settings"
-                android:background="@color/app_settings"
-                android:onClick="startSettings" />
+            <!-- App Buttons will be added programatically. -->
 
         </LinearLayout>
     </ScrollView>
 
-</FrameLayout>
+</LinearLayout>

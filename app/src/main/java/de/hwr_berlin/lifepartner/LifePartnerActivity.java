@@ -18,6 +18,10 @@ public class LifePartnerActivity extends Activity {
     public static final String PREF_TOGGLE_APP_CALENDAR = "toggleAppCalendar";
     public static final String PREF_TOGGLE_APP_CALCULATOR = "toggleAppCalculator";
     public static final String PREF_TOGGLE_APP_FLASHLIGHT = "toggleAppFlashlight";
+    public static final String PREF_TOGGLE_APP_INTERNET = "toggleAppInternet";
+    public static final String PREF_TOGGLE_APP_EMAIL = "toggleAppEmail";
+    public static final String PREF_TOGGLE_APP_MUSIC = "toggleAppMusic";
+    public static final String PREF_TOGGLE_APP_MAPS = "toggleAppMaps";
 
     int onStartCount = 0;
 

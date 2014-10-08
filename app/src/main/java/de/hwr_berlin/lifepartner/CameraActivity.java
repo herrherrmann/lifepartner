@@ -95,7 +95,7 @@ public class CameraActivity extends LifePartnerActivity {
 
     public void zoomOut(View view) {
         Camera.Parameters p = mCamera.getParameters();
-        if (p.getZoom() > 0) {
+        if (p.getZoom() > 10) {
             p.setZoom(p.getZoom() - 10);
         }
         mCamera.setParameters(p);

@@ -59,7 +59,4 @@ public class SettingsActivity extends LifePartnerActivity {
     public void startAppManager(View view) {
         startActivity(new Intent(this, AppManagerActivity.class));
     }
-
-    public void checkTextToSpeech(View view) {
-    }
 }

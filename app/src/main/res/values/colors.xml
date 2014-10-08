@@ -9,19 +9,25 @@
     <color name="main_logo_secondary">#00DD10</color>
 
     <!-- App Colors -->
-    <color name="app_phone">#59bfff</color>
+    <color name="app_phone">#ff43b7ff</color>
     <color name="app_phone_secondary">#4b9ace</color>
-
     <color name="app_sms">#7ce324</color>
     <color name="app_sms_secondary">#62ba1f</color>
-
     <color name="app_magnifier">#ffd934</color>
-
     <color name="app_health">#ff9fab</color>
-
     <color name="app_sos">#ff2a2a</color>
-
     <color name="app_settings">#aaa</color>
     <color name="app_settings_secondary">#909090</color>
+
+    <color name="app_camera">#ffc6ff10</color>
+    <color name="app_alarm">#ff1bffd5</color>
+    <color name="app_calendar">#ff9ea9ff</color>
+    <color name="app_calculator">#ff8dff7c</color>
+    <color name="app_flashlight">#fff8c0ff</color>
+
+    <color name="app_internet">#ffff626b</color>
+    <color name="app_email">#ffff8a18</color>
+    <color name="app_music">#fffff92c</color>
+    <color name="app_maps">#ff8bff2c</color>
 
 </resources>
