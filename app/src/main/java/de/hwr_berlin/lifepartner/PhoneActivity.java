@@ -10,6 +10,8 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -25,11 +27,11 @@ public class PhoneActivity extends LifePartnerActivity
      * {@link android.support.v13.app.FragmentStatePagerAdapter}.
      */
     SectionsPagerAdapter mSectionsPagerAdapter;
-
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
     ViewPager mViewPager;
+
+    TextView header;
+    ImageView tabPhone;
+    ImageView tabContacts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,19 +39,61 @@ public class PhoneActivity extends LifePartnerActivity
 
         setContentView(R.layout.activity_phone);
 
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
-
-        // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        header = (TextView) findViewById(R.id.phone_header_text);
+        tabPhone = (ImageView) findViewById(R.id.phone_tab_phone);
+        tabContacts = (ImageView) findViewById(R.id.phone_tab_contacts);
+
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i2) {
+                switch (i) {
+                    case 0:
+                        tabPhone.setBackgroundResource(R.color.app_phone);
+                        tabContacts.setBackgroundResource(R.color.app_settings);
+                        header.setText(getResources().getString(R.string.app_phone));
+                        break;
+                    case 1:
+                        tabContacts.setBackgroundResource(R.color.app_phone);
+                        tabPhone.setBackgroundResource(R.color.app_settings);
+                        header.setText(getResources().getString(R.string.app_phone_contacts));
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageSelected(int i) {
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+            }
+        });
+
+        setupTabs();
+    }
+
+    private void setupTabs() {
+        tabPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mViewPager.setCurrentItem(0);
+            }
+        });
+
+        tabContacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mViewPager.setCurrentItem(1);
+            }
+        });
     }
 
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-        // When the given tab is selected, switch to the corresponding page in
-        // the ViewPager.
         mViewPager.setCurrentItem(tab.getPosition());
     }
 
@@ -119,8 +163,7 @@ public class PhoneActivity extends LifePartnerActivity
      * @param view
      */
     public void redial(View view) {
-        TextView phoneNumber = (TextView) findViewById(R.id.phone_number);
-        phoneNumber.setText("0160133742");
+        ((TextView) findViewById(R.id.phone_number)).setText("0160133742");
     }
 
     @Override
@@ -171,8 +214,6 @@ public class PhoneActivity extends LifePartnerActivity
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PhoneFragment (defined as a static inner class below).
             switch (position) {
                 case 0:
                     return PhoneFragment.newInstance(position + 1);
@@ -185,7 +226,6 @@ public class PhoneActivity extends LifePartnerActivity
 
         @Override
         public int getCount() {
-            // Show 2 total pages.
             return 2;
         }
 

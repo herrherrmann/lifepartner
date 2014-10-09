@@ -1,38 +1,37 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/main_background"
-    android:orientation="vertical"
-    tools:context=".HomeScreen">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/App"
+                tools:context=".HomeScreen">
 
     <!-- Header -->
     <LinearLayout
-        style="@style/HomeScreenAppButton"
-        android:padding="0dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/AppHeader"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header_sms"
         android:background="@drawable/shape_sms_header">
 
         <ImageView
             style="@style/AppHeaderBack"
-            android:src="@drawable/arrow_left"
-            android:onClick="finish" />
+            android:onClick="finish"/>
 
         <TextView
             style="@style/AppHeaderText"
-            android:text="@string/app_sms" />
+            android:text="@string/app_sms"/>
 
     </LinearLayout>
 
     <TextView
         style="@style/SmsButtonNew"
-        android:drawableStart="@drawable/sms_closed"
-        android:text="Neue Nachricht" />
+        android:drawableStart="@drawable/sms_closed_white"
+        android:id="@+id/btn_new_sms"
+        android:text="Neue Nachricht"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/main_white"/>
 
     <ListView
         style="@style/SmsList"
+        android:layout_below="@id/header_sms"
+        android:layout_above="@id/btn_new_sms"
         android:id="@+id/sms_list"></ListView>
 
-</LinearLayout>
+</RelativeLayout>

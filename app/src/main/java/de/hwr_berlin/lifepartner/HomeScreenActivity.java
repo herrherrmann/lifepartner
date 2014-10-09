@@ -73,11 +73,11 @@ public class HomeScreenActivity extends LifePartnerActivity implements TextToSpe
         });
         appSelection.addView(btnMagnifier);
 
-        Button btnHealth = createAppButton(R.string.app_health, R.drawable.health, R.color.app_health);
+        Button btnHealth = createAppButton(R.string.app_health, R.drawable.health_apple, R.color.app_health);
         btnHealth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // ...
+                startAppHealth(view);
             }
         });
         appSelection.addView(btnHealth);
@@ -300,6 +300,6 @@ public class HomeScreenActivity extends LifePartnerActivity implements TextToSpe
     }
 
     public void startAppHealth(View view) {
-        // startActivity(new Intent(this, HealthActivity.class));
+        startActivity(new Intent(this, HealthActivity.class));
     }
 }

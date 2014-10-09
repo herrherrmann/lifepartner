@@ -30,6 +30,7 @@
         <item name="android:gravity">left|center_vertical</item>
         <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textColor">@color/main_text</item>
+        <item name="android:src">@drawable/arrow_left</item>
     </style>
 
     <style name="AppHeaderText">
@@ -40,15 +41,28 @@
         <item name="android:textColor">@color/main_text</item>
     </style>
 
+    <style name="AppTab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/default_padding_s</item>
+        <item name="android:paddingBottom">@dimen/default_padding_s</item>
+        <item name="android:background">@color/app_settings</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:textColor">@color/main_white</item>
+    </style>
+
     <style name="Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">@dimen/default_padding_m</item>
         <item name="android:layout_marginBottom">@dimen/default_padding_xs</item>
         <item name="android:orientation">vertical</item>
+        <item name="android:gravity">left</item>
         <item name="android:textColor">@color/main_white</item>
         <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:background">@color/app_settings</item>
+        <item name="android:drawablePadding">@dimen/default_padding_s</item>
     </style>
 
     <!-- HomeScreen -->

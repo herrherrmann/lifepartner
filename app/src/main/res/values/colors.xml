@@ -15,6 +15,7 @@
     <color name="app_sms_secondary">#62ba1f</color>
     <color name="app_magnifier">#ffd934</color>
     <color name="app_health">#ff9fab</color>
+    <color name="app_health_secondary">#ffd06167</color>
     <color name="app_sos">#ff2a2a</color>
     <color name="app_settings">#aaa</color>
     <color name="app_settings_secondary">#909090</color>

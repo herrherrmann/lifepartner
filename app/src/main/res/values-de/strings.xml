@@ -17,6 +17,13 @@
     <string name="app_sos">SOS</string>
     <string name="app_settings">Einstellungen</string>
 
+    <string name="title_activity_sms">Nachrichten</string>
+    <string name="title_activity_camera">Kamera</string>
+    <string name="title_activity_intro">LifePartner Intro</string>
+    <string name="title_activity_app_manager">Apps hinzufügen/entfernen</string>
+    <string name="title_activity_sos">SOS</string>
+    <string name="title_activity_health">Gesundheit</string>
+
     <!-- Basis-Paket -->
     <string name="app_camera">Kamera</string>
     <string name="app_alarm">Wecker/Timer</string>
@@ -39,6 +46,12 @@
     <string name="settings_about">Über</string>
     <string name="settings_ringtone">Klingelton</string>
     <string name="settings_texttospeech">Sprachausgabe</string>
+
+    <!-- Gesundheit -->
+    <string name="health_medicine">Medikation</string>
+    <string name="health_medicine_taken">Eingenommen</string>
+    <string name="health_blood">Blutdruck</string>
+    <string name="health_heart">Herzfrequenz</string>
 
     <!-- SOS -->
     <string name="sos_info">Soll Ihr Notfallkontakt Beate Frühling (0177/736452) jetzt benachrichtigt werden?</string>

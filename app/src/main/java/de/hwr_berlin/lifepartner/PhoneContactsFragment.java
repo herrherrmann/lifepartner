@@ -70,6 +70,7 @@ public class PhoneContactsFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
+
     }
 
     /**

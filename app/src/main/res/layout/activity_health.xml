@@ -1,12 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               style="@style/App"
-              tools:context="de.hwr_berlin.lifepartner.SettingsActivity">
+              tools:context="de.hwr_berlin.lifepartner.HealthActivity">
 
     <!-- Header -->
     <LinearLayout
         style="@style/AppHeader"
-        android:background="@drawable/shape_phone_header">
+        android:background="@drawable/shape_health_header">
 
         <ImageView
             style="@style/AppHeaderBack"
@@ -14,8 +14,8 @@
 
         <TextView
             style="@style/AppHeaderText"
-            android:id="@+id/phone_header_text"
-            android:text="@string/app_phone"/>
+            android:id="@+id/health_header_text"
+            android:text="@string/app_health"/>
 
     </LinearLayout>
 
@@ -27,13 +27,19 @@
 
         <ImageView
             style="@style/AppTab"
-            android:id="@+id/phone_tab_phone"
-            android:src="@drawable/phone_keys"/>
+            android:id="@+id/health_tab_medicine"
+            android:src="@drawable/medicine"
+            android:background="@color/app_health"/>
 
         <ImageView
             style="@style/AppTab"
-            android:id="@+id/phone_tab_contacts"
-            android:src="@drawable/phone_contacts"/>
+            android:id="@+id/health_tab_heart"
+            android:src="@drawable/heart"/>
+
+        <ImageView
+            style="@style/AppTab"
+            android:id="@+id/health_tab_blood"
+            android:src="@drawable/blood"/>
 
     </LinearLayout>
 
@@ -41,7 +47,6 @@
                                        xmlns:tools="http://schemas.android.com/tools"
                                        android:id="@+id/pager"
                                        android:layout_width="match_parent"
-                                       android:layout_height="match_parent"
-                                       tools:context="de.hwr_berlin.lifepartner.PhoneActivity"/>
+                                       android:layout_height="match_parent"/>
 
 </LinearLayout>

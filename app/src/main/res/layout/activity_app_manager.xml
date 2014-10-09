@@ -94,7 +94,7 @@
                     style="@style/SettingsAppManagerAppButton"
                     android:text="@string/app_health"
                     android:textColor="@color/app_health"
-                    android:drawableStart="@drawable/health"/>
+                    android:drawableStart="@drawable/medicine"/>
             </LinearLayout>
 
             <LinearLayout style="@style/SettingsAppManagerApp">

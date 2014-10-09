@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               style="@style/App"
+              android:background="@color/main_white"
               tools:context="de.hwr_berlin.lifepartner.SosActivity">
 
     <!-- Header -->
@@ -10,7 +11,6 @@
 
         <ImageView
             style="@style/AppHeaderBack"
-            android:src="@drawable/arrow_left"
             android:onClick="finish"/>
 
         <TextView
@@ -43,7 +43,7 @@
                 android:padding="@dimen/default_padding_m"
                 android:id="@+id/sos_info"
                 android:text="@string/sos_info"
-                android:textSize="@dimen/default_text_size"
+                android:textSize="@dimen/default_text_size_small"
                 android:textColor="@color/app_sos"/>
 
             <Button
@@ -51,6 +51,7 @@
                 android:id="@+id/btn_sos_send"
                 android:textColor="@color/main_white"
                 android:background="@color/app_sos"
+                android:drawableStart="@drawable/check_white"
                 android:text="@string/sos_call_send"
                 android:onClick="sendSos"/>
 
@@ -59,6 +60,7 @@
                 android:id="@+id/btn_sos_cancel"
                 android:textColor="@color/main_white"
                 android:text="@string/cancel"
+                android:drawableStart="@drawable/cross_white"
                 android:onClick="finish"/>
 
         </LinearLayout>
