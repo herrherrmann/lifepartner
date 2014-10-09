@@ -21,8 +21,6 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-import de.hwr_berlin.rp5000.R;
-
 public class HomeScreenActivity extends LifePartnerActivity implements TextToSpeech.OnInitListener {
 
     private static Context context;

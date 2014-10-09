@@ -14,8 +14,6 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-import de.hwr_berlin.rp5000.R;
-
 
 public class PhoneActivity extends LifePartnerActivity
         implements ActionBar.TabListener, PhoneContactsFragment.OnFragmentInteractionListener {

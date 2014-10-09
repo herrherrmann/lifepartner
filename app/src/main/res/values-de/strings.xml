@@ -42,5 +42,10 @@
 
     <!-- SOS -->
     <string name="sos_info">Soll Ihr Notfallkontakt Beate Frühling (0177/736452) jetzt benachrichtigt werden?</string>
+    <string name="sos_call_sent">Notruf gesendet</string>
+    <string name="sos_call_cancel">Notruf abbrechen</string>
+    <string name="sos_calling">Wir versuchen nun, Beate Frühling zu erreichen ...</string>
+    <string name="sos_call_send">Notruf senden</string>
+    <string name="cancel">Abbrechen</string>
 
 </resources>

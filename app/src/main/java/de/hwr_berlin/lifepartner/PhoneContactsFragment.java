@@ -13,8 +13,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import de.hwr_berlin.rp5000.R;
-
 public class PhoneContactsFragment extends ListFragment {
 
     private OnFragmentInteractionListener mListener;

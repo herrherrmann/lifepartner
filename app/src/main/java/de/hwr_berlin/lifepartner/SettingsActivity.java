@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckedTextView;
 
-import de.hwr_berlin.rp5000.R;
-
 
 public class SettingsActivity extends LifePartnerActivity {
 

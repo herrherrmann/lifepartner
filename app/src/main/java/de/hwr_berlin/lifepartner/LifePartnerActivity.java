@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
-import de.hwr_berlin.rp5000.R;
-
 public class LifePartnerActivity extends Activity {
 
     public static final String PREFS = "LifePartnerSettings";

@@ -51,14 +51,14 @@
                 android:id="@+id/btn_sos_send"
                 android:textColor="@color/main_white"
                 android:background="@color/app_sos"
-                android:text="Notruf senden"
+                android:text="@string/sos_call_send"
                 android:onClick="sendSos"/>
 
             <Button
                 style="@style/Button"
                 android:id="@+id/btn_sos_cancel"
                 android:textColor="@color/main_white"
-                android:text="Abbrechen"
+                android:text="@string/cancel"
                 android:onClick="finish"/>
 
         </LinearLayout>

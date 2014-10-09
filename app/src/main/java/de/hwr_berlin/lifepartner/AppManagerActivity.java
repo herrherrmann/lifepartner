@@ -1,15 +1,8 @@
 package de.hwr_berlin.lifepartner;
 
-import android.app.Activity;
 import android.content.SharedPreferences;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-
-import de.hwr_berlin.rp5000.R;
 
 
 public class AppManagerActivity extends LifePartnerActivity {

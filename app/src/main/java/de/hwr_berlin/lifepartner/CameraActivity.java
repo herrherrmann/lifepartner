@@ -10,12 +10,8 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import java.io.IOException;
-
-import de.hwr_berlin.rp5000.R;
 
 
 public class CameraActivity extends LifePartnerActivity {
