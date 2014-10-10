@@ -1,14 +1,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/main_background"
-    tools:context=".HomeScreen">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_background"
+                tools:context=".HomeScreen">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/camera_preview" />
+        android:id="@+id/camera_preview"/>
 
     <!-- Header -->
     <LinearLayout
@@ -22,11 +22,11 @@
         <ImageView
             style="@style/AppHeaderBack"
             android:src="@drawable/arrow_left"
-            android:onClick="finish" />
+            android:onClick="finish"/>
 
         <TextView
             style="@style/AppHeaderText"
-            android:text="@string/app_magnifier" />
+            android:text="@string/app_magnifier"/>
 
     </LinearLayout>
 
@@ -42,20 +42,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/app_magnifier"
-            android:padding="@dimen/default_padding_s"
+            android:padding="@dimen/main_padding_s"
             android:src="@drawable/magnifier_zoom_in"
             android:id="@+id/btn_zoom_in"
-            android:onClick="zoomIn" />
+            android:onClick="zoomIn"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/app_magnifier"
-            android:padding="@dimen/default_padding_s"
+            android:padding="@dimen/main_padding_s"
             android:id="@+id/btn_zoom_out"
             android:src="@drawable/magnifier_zoom_out"
-            android:onClick="zoomOut" />
+            android:onClick="zoomOut"/>
 
     </LinearLayout>
 

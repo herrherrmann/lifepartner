@@ -19,9 +19,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/default_padding_m"
+                android:padding="@dimen/main_padding_m"
                 android:text="@string/intro_package"
-                android:textSize="@dimen/default_text_size"
+                android:textSize="@dimen/main_text_size"
                 android:textColor="@color/main_logo"/>
 
             <LinearLayout
@@ -36,14 +36,14 @@
                     android:layout_height="wrap_content"
                     android:text="Minimal-Paket"
                     android:textColor="@color/main_white"
-                    android:textSize="@dimen/default_text_size"/>
+                    android:textSize="@dimen/main_text_size"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Essenzielle Funktionen."
                     android:textColor="@color/main_white"
-                    android:textSize="@dimen/default_text_size_small"/>
+                    android:textSize="@dimen/main_text_size_small"/>
 
             </LinearLayout>
 
@@ -58,14 +58,14 @@
                     android:layout_height="wrap_content"
                     android:text="Basis-Paket"
                     android:textColor="@color/main_white"
-                    android:textSize="@dimen/default_text_size"/>
+                    android:textSize="@dimen/main_text_size"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Zusätzliche Funktionen wie Kamera, Wecker und Kalender."
                     android:textColor="@color/main_white"
-                    android:textSize="@dimen/default_text_size_small"/>
+                    android:textSize="@dimen/main_text_size_small"/>
 
             </LinearLayout>
 
@@ -80,14 +80,14 @@
                     android:layout_height="wrap_content"
                     android:text="Vollzugriff-Paket"
                     android:textColor="@color/main_white"
-                    android:textSize="@dimen/default_text_size"/>
+                    android:textSize="@dimen/main_text_size"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Der volle Funktionsumfang für versierte Benutzer."
                     android:textColor="@color/main_white"
-                    android:textSize="@dimen/default_text_size_small"/>
+                    android:textSize="@dimen/main_text_size_small"/>
 
             </LinearLayout>
 

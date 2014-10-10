@@ -9,10 +9,10 @@
         android:id="@+id/phone_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/default_text_size"
-        android:paddingLeft="@dimen/default_padding_s"
-        android:paddingRight="@dimen/default_padding_s"
-        android:paddingTop="@dimen/default_padding_s"
+        android:textSize="@dimen/main_text_size"
+        android:paddingLeft="@dimen/main_padding_s"
+        android:paddingRight="@dimen/main_padding_s"
+        android:paddingTop="@dimen/main_padding_s"
         android:textColor="@color/app_phone_secondary">
     </TextView>
 
@@ -21,10 +21,10 @@
         android:layout_below="@+id/phone_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/default_text_size_small"
-        android:paddingLeft="@dimen/default_padding_s"
-        android:paddingRight="@dimen/default_padding_s"
-        android:paddingBottom="@dimen/default_padding_m"
+        android:textSize="@dimen/main_text_size_small"
+        android:paddingLeft="@dimen/main_padding_s"
+        android:paddingRight="@dimen/main_padding_s"
+        android:paddingBottom="@dimen/main_padding_m"
         android:textColor="@color/main_black">
     </TextView>
 

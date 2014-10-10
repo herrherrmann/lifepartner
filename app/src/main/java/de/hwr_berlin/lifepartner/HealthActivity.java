@@ -4,6 +4,7 @@ import java.util.Locale;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.net.Uri;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -16,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class HealthActivity extends LifePartnerActivity {
+public class HealthActivity extends LifePartnerActivity implements HealthHeartFragment.OnFragmentInteractionListener {
 
     SectionsPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
@@ -108,6 +109,11 @@ public class HealthActivity extends LifePartnerActivity {
         });
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -125,7 +131,7 @@ public class HealthActivity extends LifePartnerActivity {
                 case 0:
                     return HealthMedicineFragment.newInstance();
                 case 1:
-                    return HealthMedicineFragment.newInstance(); // TODO
+                    return HealthHeartFragment.newInstance();
                 case 2:
                     return HealthMedicineFragment.newInstance(); // TODO
                 default:

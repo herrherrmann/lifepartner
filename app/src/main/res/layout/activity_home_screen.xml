@@ -1,8 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/App"
-    android:id="@+id/fullscreen_content"
-    tools:context=".HomeScreen">
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/App"
+              android:id="@+id/fullscreen_content"
+              tools:context=".HomeScreen">
 
     <!-- Status Bar -->
     <LinearLayout
@@ -42,11 +42,7 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fadeScrollbars="false"
-        android:fillViewport="false"
-        android:keepScreenOn="true">
+        style="@style/ScrollView">
 
         <LinearLayout
             android:id="@+id/app_selection"

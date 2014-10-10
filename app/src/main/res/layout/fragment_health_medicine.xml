@@ -1,7 +1,5 @@
 <ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    style="@style/App"
+    style="@style/ScrollView"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context="de.hwr_berlin.lifepartner.HealthActivity.MedicsFragment">
@@ -15,43 +13,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nächste Einnahme:"
-            android:textSize="@dimen/default_text_size"
+            android:textSize="@dimen/main_text_size"
             android:textStyle="bold"
             android:textColor="@color/main_text"
-            android:padding="@dimen/default_padding_s"/>
+            android:paddingTop="@dimen/main_padding_s"
+            android:paddingLeft="@dimen/main_padding_s"
+            android:paddingRight="@dimen/main_padding_s"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:padding="@dimen/default_padding_s"
-            android:textSize="@dimen/default_text_size"
+            android:padding="@dimen/main_padding_s"
+            android:textSize="@dimen/main_text_size"
             android:textColor="@color/main_text"
             android:text="18.00 Uhr"
             android:drawableStart="@drawable/alarm_clock"
-            android:drawablePadding="@dimen/default_padding_s"/>
+            android:drawablePadding="@dimen/main_padding_s"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:padding="@dimen/default_padding_s"
-            android:textSize="@dimen/default_text_size"
+            android:padding="@dimen/main_padding_s"
+            android:textSize="@dimen/main_text_size"
             android:textColor="@color/main_text"
             android:text="Doxazosin"
             android:drawableStart="@drawable/medicine_pill"
-            android:drawablePadding="@dimen/default_padding_s"/>
+            android:drawablePadding="@dimen/main_padding_s"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:padding="@dimen/default_padding_s"
-            android:textSize="@dimen/default_text_size"
+            android:padding="@dimen/main_padding_s"
+            android:textSize="@dimen/main_text_size"
             android:textColor="@color/main_text"
             android:text="Amitriptylin"
             android:drawableStart="@drawable/medicine_pill"
-            android:drawablePadding="@dimen/default_padding_s"/>
+            android:drawablePadding="@dimen/main_padding_s"/>
 
         <Button
             style="@style/Button"

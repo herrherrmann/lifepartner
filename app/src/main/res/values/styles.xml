@@ -8,8 +8,6 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@color/main_background</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
-        <item name="android:textColor">@color/main_text</item>
     </style>
 
     <style name="AppHeader">
@@ -18,17 +16,17 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">left|center_vertical</item>
         <item name="android:padding">0dp</item>
-        <item name="android:drawablePadding">@dimen/default_padding_s</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:drawablePadding">@dimen/main_padding_s</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
 
     <style name="AppHeaderBack">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:padding">@dimen/default_padding_m</item>
+        <item name="android:padding">@dimen/main_padding_m</item>
         <item name="android:gravity">left|center_vertical</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/main_text</item>
         <item name="android:src">@drawable/arrow_left</item>
     </style>
@@ -37,7 +35,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:gravity">left|center_vertical</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
 
@@ -45,24 +43,33 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:paddingTop">@dimen/default_padding_s</item>
-        <item name="android:paddingBottom">@dimen/default_padding_s</item>
+        <item name="android:paddingTop">@dimen/main_padding_s</item>
+        <item name="android:paddingBottom">@dimen/main_padding_s</item>
         <item name="android:background">@color/app_settings</item>
-        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:textSize">@dimen/main_text_size_small</item>
         <item name="android:textColor">@color/main_white</item>
     </style>
 
     <style name="Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">@dimen/default_padding_m</item>
-        <item name="android:layout_marginBottom">@dimen/default_padding_xs</item>
+        <item name="android:padding">@dimen/main_padding_m</item>
+        <item name="android:layout_marginBottom">@dimen/main_padding_xs</item>
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/main_white</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:background">@color/app_settings</item>
-        <item name="android:drawablePadding">@dimen/default_padding_s</item>
+        <item name="android:drawablePadding">@dimen/main_padding_s</item>
+    </style>
+
+    <style name="ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:fillViewport">false</item>
+        <item name="android:keepScreenOn">true</item>
+        <item name="android:background">@color/main_background</item>
     </style>
 
     <!-- HomeScreen -->
@@ -70,15 +77,15 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:gravity">left|center_vertical</item>
-        <item name="android:paddingLeft">@dimen/default_padding_s</item>
-        <item name="android:paddingRight">@dimen/default_padding_s</item>
-        <item name="android:paddingTop">@dimen/default_padding_s</item>
-        <item name="android:paddingBottom">@dimen/default_padding_s</item>
+        <item name="android:paddingLeft">@dimen/main_padding_s</item>
+        <item name="android:paddingRight">@dimen/main_padding_s</item>
+        <item name="android:paddingTop">@dimen/main_padding_s</item>
+        <item name="android:paddingBottom">@dimen/main_padding_s</item>
     </style>
 
     <style name="HomeScreenStatusBarItem">
-        <item name="android:layout_marginRight">@dimen/default_padding_xs</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:layout_marginRight">@dimen/main_padding_xs</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
 
@@ -86,9 +93,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">left|center_vertical</item>
-        <item name="android:padding">@dimen/default_padding_m</item>
-        <item name="android:drawablePadding">@dimen/default_padding_s</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:padding">@dimen/main_padding_m</item>
+        <item name="android:drawablePadding">@dimen/main_padding_s</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
 
@@ -96,24 +103,24 @@
     <style name="PhoneButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
-        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:padding">@dimen/main_padding_s</item>
         <item name="android:background">@drawable/shape_phone_btn</item>
     </style>
 
     <style name="PhoneButtonCall">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
-        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:padding">@dimen/main_padding_s</item>
         <item name="android:background">@drawable/shape_phone_btn_call</item>
     </style>
 
     <style name="PhoneButtonGrey">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
-        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:padding">@dimen/main_padding_s</item>
         <item name="android:background">@drawable/shape_phone_btn_others</item>
     </style>
 
@@ -121,9 +128,9 @@
     <style name="SmsButtonNew">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">@dimen/default_padding_m</item>
+        <item name="android:padding">@dimen/main_padding_m</item>
         <item name="android:background">@color/app_sms_secondary</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
@@ -144,40 +151,40 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">left|center_vertical</item>
-        <item name="android:padding">@dimen/default_padding_s</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:padding">@dimen/main_padding_s</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/main_text</item>
     </style>
 
     <style name="SettingsHeader">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/main_white</item>
         <item name="android:background">@color/app_settings_secondary</item>
-        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:padding">@dimen/main_padding_s</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:layout_marginBottom">@dimen/default_padding_xs</item>
+        <item name="android:layout_marginBottom">@dimen/main_padding_xs</item>
     </style>
 
     <style name="SettingsHeaderText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/main_white</item>
     </style>
 
     <style name="SettingsHeaderDescription">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:textSize">@dimen/main_text_size_small</item>
         <item name="android:textColor">@color/main_white</item>
     </style>
 
     <style name="SettingsAppManagerApp">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">@dimen/default_padding_s</item>
+        <item name="android:padding">@dimen/main_padding_s</item>
         <item name="android:orientation">horizontal</item>
     </style>
 
@@ -185,7 +192,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">top</item>
-        <item name="android:layout_marginRight">@dimen/default_padding_s</item>
+        <item name="android:layout_marginRight">@dimen/main_padding_s</item>
     </style>
 
     <style name="SettingsAppManagerAppButton" parent="HomeScreenAppButton">
@@ -193,6 +200,5 @@
         <item name="android:gravity">left|top</item>
         <item name="android:drawableEnd">@drawable/arrow_up_down</item>
     </style>
-
 
 </resources>
