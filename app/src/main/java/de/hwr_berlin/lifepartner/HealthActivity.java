@@ -33,18 +33,13 @@ public class HealthActivity extends LifePartnerActivity implements HealthHeartFr
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health);
 
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
-
-        // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         tabMedicine = (ImageView) findViewById(R.id.health_tab_medicine);
         tabHeart = (ImageView) findViewById(R.id.health_tab_heart);
         tabBlood = (ImageView) findViewById(R.id.health_tab_blood);
-
         header = (TextView) findViewById(R.id.health_header_text);
 
         mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -93,14 +88,12 @@ public class HealthActivity extends LifePartnerActivity implements HealthHeartFr
                 mViewPager.setCurrentItem(0);
             }
         });
-
         tabHeart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mViewPager.setCurrentItem(1);
             }
         });
-
         tabBlood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,7 +126,7 @@ public class HealthActivity extends LifePartnerActivity implements HealthHeartFr
                 case 1:
                     return HealthHeartFragment.newInstance();
                 case 2:
-                    return HealthMedicineFragment.newInstance(); // TODO
+                    return HealthBloodFragment.newInstance();
                 default:
                     return null;
             }

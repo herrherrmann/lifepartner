@@ -1,45 +1,32 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/ScrollView"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="de.hwr_berlin.lifepartner.HealthHeartFragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            style="@style/ScrollView"
+            tools:context="de.hwr_berlin.lifepartner.HealthBloodFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/health_heart_icon"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/main_padding_s"
+            android:drawableStart="@drawable/blueetooth"
+            android:drawablePadding="@dimen/main_padding_s"
+            android:text="Suche ..."
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/main_text_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:padding="@dimen/main_padding_s"
-            android:src="@drawable/heart_pink"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Aktuelle Messung:"
-            android:textSize="@dimen/main_text_size"
-            android:textColor="@color/app_health"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="80 bpm"
-            android:textSize="@dimen/main_text_size_big"
-            android:textColor="@color/app_health_secondary"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/main_padding_s"/>
-
-        <Button
-            style="@style/Button"
-            android:text="Jetzt speichern"
-            android:drawableStart="@drawable/check_white"
-            android:background="@color/main_logo"/>
+            android:text="Bitte verbinden Sie Ihr Blutzucker-Messgerät via Bluetooth und beginnen Sie mit der Messung."
+            android:textSize="@dimen/main_text_size_small"
+            android:textColor="@color/main_text"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -48,7 +35,7 @@
             android:textSize="@dimen/main_text_size"
             android:textStyle="bold"
             android:textColor="@color/main_text"
-            android:paddingTop="@dimen/main_padding_m"
+            android:paddingTop="@dimen/main_padding_s"
             android:paddingLeft="@dimen/main_padding_s"
             android:paddingRight="@dimen/main_padding_s"/>
 
@@ -61,10 +48,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/main_padding_s"
-                android:text="76 bpm"
+                android:text="4,2 mmol/l"
                 android:textSize="@dimen/main_text_size"
                 android:textColor="@color/main_text"
-                android:drawableStart="@drawable/heart_rate"
+                android:drawableStart="@drawable/blood"
                 android:drawablePadding="@dimen/main_padding_s"/>
 
             <TextView
@@ -85,20 +72,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/main_padding_s"
-                android:text="83 bpm"
+                android:text="5,3 mmol/l"
                 android:textSize="@dimen/main_text_size"
                 android:textColor="@color/main_text"
-                android:drawableStart="@drawable/heart_rate"
+                android:drawableStart="@drawable/blood"
                 android:drawablePadding="@dimen/main_padding_s"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:text="09.10.14 \n17:58"
+                android:text="09.10.14\n17:58"
+                android:textSize="@dimen/main_text_size_small"
+                android:textColor="@color/main_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/main_padding_s"
+                android:text="3,7 mmol/l"
+                android:textSize="@dimen/main_text_size"
+                android:textColor="@color/main_text"
+                android:drawableStart="@drawable/blood"
+                android:drawablePadding="@dimen/main_padding_s"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="09.10.14\n7:03"
                 android:textSize="@dimen/main_text_size_small"
                 android:textColor="@color/main_text"/>
         </LinearLayout>
 
     </LinearLayout>
+
 </ScrollView>
