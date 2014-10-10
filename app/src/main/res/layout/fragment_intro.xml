@@ -23,15 +23,11 @@
         android:textColor="@color/main_logo"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Button"
         android:id="@+id/btn_continue"
+        android:gravity="center"
         android:text="@string/intro_continue"
-        android:textColor="@color/main_white"
-        android:textSize="@dimen/main_text_size"
-        android:padding="@dimen/main_padding_m"
         android:background="@color/main_logo"
-        android:layout_gravity="center"
         android:onClick="nextPage"/>
 
 </LinearLayout>
