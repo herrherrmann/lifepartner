@@ -50,7 +50,7 @@
     <!-- Gesundheit -->
     <string name="health_medicine">Medikation</string>
     <string name="health_medicine_taken">Eingenommen</string>
-    <string name="health_blood">Blutdruck</string>
+    <string name="health_blood_sugar">Blutzucker</string>
     <string name="health_heart">Herzfrequenz</string>
 
     <!-- SOS -->

@@ -9,8 +9,6 @@ import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -62,7 +60,7 @@ public class HealthActivity extends LifePartnerActivity implements HealthHeartFr
                         tabMedicine.setBackgroundResource(R.color.app_settings);
                         tabHeart.setBackgroundResource(R.color.app_settings);
                         tabBlood.setBackgroundResource(R.color.app_health);
-                        header.setText(getResources().getString(R.string.health_blood));
+                        header.setText(getResources().getString(R.string.health_blood_sugar));
                         break;
                 }
             }
@@ -146,7 +144,7 @@ public class HealthActivity extends LifePartnerActivity implements HealthHeartFr
                 case 1:
                     return getString(R.string.health_heart).toUpperCase(l);
                 case 2:
-                    return getString(R.string.health_blood).toUpperCase(l);
+                    return getString(R.string.health_blood_sugar).toUpperCase(l);
             }
             return null;
         }
